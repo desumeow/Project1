@@ -1,0 +1,62 @@
+
+
+.header-block {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "logo menu menu"
+                         ". banner banner"
+                         ". banner banner";
+    gap: 20px;
+}
+
+.banner {
+    grid-area: banner;
+    font-size: 72px;
+    line-height: 100px;
+    font-family: "Poppins";
+    font-weight: 300;
+    color: #4c77eb;
+    justify-self: center;
+    padding-left: 384px;
+    padding-top: 70px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.logo {
+    grid-area: logo;
+    justify-self: start;
+    padding-left: 30px;
+    padding-top: 25px;
+}
+
+.menu-button {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu-list {
+    display: flex;
+    font-family: "Poppins";
+    grid-area: menu;
+    justify-self: end;
+    margin-right: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-button a {
+    color: #8ea2dc;
+}
+
+.menu-button a:hover {
+    color: #4c77eb;
+    text-shadow:0 0 10px #8ea2dc
+}
+
+.trial-button {
+    padding-top: 10px;
+}

@@ -1,0 +1,113 @@
+.classes{
+    width: 100%;
+    height: 790px;
+    background: url(./img/body/classes/Layer\ 14.png) no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.dec-lotus{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 112px;
+    background: url(./img/body/classes/Vector\ Smart\ Object.png) top center no-repeat;
+    z-index: -7;
+}
+
+.classes-topic{
+    position: relative;
+    bottom: 10px;
+    margin: 0;
+    font-size: 48px;
+    font-weight: 300;
+    text-align: center;
+    color: #4c77eb;
+}
+
+.classes-content{
+    display: flex;
+    margin-left: 360px;
+    margin-top: 20px;
+    margin-right: 200px;
+    gap: 0px;
+}
+
+.classes-pos {
+    width: 300px;
+}
+
+.class-name {
+    font-size: 18px;
+    color: #4c77eb;
+    font-weight: 500;
+    height: 55px;
+    margin-left: 20px;
+}
+
+.class-info {
+    list-style-type: none;
+}
+
+.class-info li {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    font-family: "Lato";
+    font-weight: 400;
+    color: grey;
+}
+
+.class-info li:nth-child(1) {
+    list-style-image: url(./img/body/classes/time.png);
+}
+
+.class-info li:nth-child(2) {
+    list-style-image: url(./img/body/classes/teacher.png);
+}
+
+.class-info li:nth-child(3) {
+    list-style-image: url(./img/body/classes/lvil.png);
+    padding-bottom: 0px;
+
+}
+
+.about-class {
+    margin-left: 20px;
+    font-size: 14px;
+    font-family: "Lato";
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.control{
+    height: 30px;
+    position: relative;
+    top: 80px;
+    background: none;
+    border: none;
+    font-size: 25px;
+    font-family: "Poppins";
+    color: #4c77eb;
+}
+
+.control:nth-child(1){
+    right: 25px;
+}
+
+.control:last-child{
+    left: 25px;
+}
+
+.inactive {
+    color: grey;
+}
+
+.highlight:hover{
+    box-shadow: inset #fff 0 0 40px 0px,
+	                  #fff 0 0 15px 0px;
+}
+
+.highlight-txt:hover{
+    text-shadow:0 0 10px #8ea2dc
+}
