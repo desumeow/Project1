@@ -34,6 +34,7 @@
     margin-top: 90px;
 }
 
+/* about-text h1 нельзя писать стили каскадно. Только один класс! исправить ВЕЗДЕ! */
 .about-text h1 {
     font-size: 48px;;
     color: #4c77eb;
@@ -42,6 +43,7 @@
     font-weight: 300;
     line-height: 28px;
 }
+
 
 .about-text p {
     margin-top: 0;
@@ -85,10 +87,11 @@
 
 .icon-border{
     grid-area: emb;
-    position: relative;
+    /* position: relative;
     left: 40px;
     right: 20px;
-    bottom: 20px;
+    bottom: 20px; */
+    /* Нельзя так верстать. Используй для этого обычные отступы */
     align-self: center;
     justify-self: left;
     padding: 15px;

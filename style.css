@@ -1,14 +1,17 @@
 body {
-    width: 1920px;
-    height: 6190px;
+    /* width: 1920px; */
+    /* ширину у гига родительских блоков нельзя ограничивать */
+    /* height: 6190px; */
+    /* Высоту никогда нельзя ограничивать у бади! И даже у обычных блоков. Только в ГИГА редком случае, но для как правило: нельзя ставить ограниченную высоту. А если поставил, то готовься обьяснить зачем. */
     margin: 0; 
     background: 
         url(./img/header/headerimg.png) left top no-repeat;      
-    background-size: auto, auto, cover;
+    /* background-size: auto, auto, cover; */
+    /* background-size: cover; */
+    /* выбери либо cover либо 100% auto */
     font-family: "Poppins";
     font-style: "Light";
     font-weight: 300;
-
 }
 
 html {
