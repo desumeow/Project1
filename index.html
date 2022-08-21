@@ -14,66 +14,89 @@
   <title>Wand Yoga</title>
  </head>
  <body>
-    <header class="page-header">
-      <!-- header-block надо убрать. лишняя обёртка -->
-      <div class="header-block">
-        <a class="logo">
-          <img src="./img/header/logo.png" alt="logo" >
-        </a>
+  <header class="page-header">
+    <img src="./img/header/headerimg.png" class="background woman">
+    <div class="header-menu">
+      <img src="./img/header/logo.png" alt="logo" >
+      <div>
         <ul class="menu-list">
-          <li class="menu-button"><a href="">Home</a></li>
-          <li class="menu-button"><a href="">About Us</a></li>
-          <li class="menu-button"><a href="">Teacher</a></li>
-          <li class="menu-button"><a href="">Pricing</a></li>
-          <li class="menu-button"><a href="">Blog</a></li>
-          <li class="menu-button"><a href="">Login</a></li>
-          <a href="" class="trial-button">
-            <svg width="202" height="42">
-              <rect x="2" y="2" width="200px" height="40px" fill="#7492ec" rx="15" ry="100"></rect>
-              <text x="16" y="25" class="trial" style="
-              fill: #ffffff; 
-              font-family:Poppins;
-              font-style:Light;
-              font-weight: bold;
-              font-size: 90%;">
-              START YOUR FREE TRIAL</text>
-          </svg>
-        </a>
+          <li class="menu-button"><a href="" class="menu-link">Home</a></li>
+          <li class="menu-button"><a href="" class="menu-link">About Us</a></li>
+          <li class="menu-button"><a href="" class="menu-link">Teacher</a></li>
+          <li class="menu-button"><a href="" class="menu-link">Pricing</a></li>
+          <li class="menu-button"><a href="" class="menu-link">Blog</a></li>
+          <li class="menu-button"><a href="" class="menu-link">Login</a></li>
         </ul>
-       
+        <button type="submit" class="trial-button">START YOUR FREE TRIAL</button>
+      </div>
+    </div>
+    <div class="banner-container">
         <div class="banner">
-          <p>
-          Be Happy</br>
-          &nbsp;Be Healthy</br>
-          &nbsp;&nbsp;Be Infinity
-          </p>
-          <!-- Никогда нельзя добавлять пробелы для создания отступа. Для этого у тебя есть css -->
+          <p class="banner-first-line">Be Happy</p>
+          <p class="banner-second-line">Be Healthy</p>
+          <p class="banner-third-line">Be Infinity</p>
         </div>
-      </div>
-    </header>
+    </div>
+  </header>
     <main>
-    <section class="about">
-      <div class="about-main">
-        <div class="about-text">
-          <h1>Everyone's Yoga</h1>
-          <p>We offers over 4,000 professionally-filmed online yoga classes taught by experienced, certified yoga teachers to customers around the world. 
-            We belive that yoga should be accessible to everyone and our classes are designed to give you an in-studio experience, at an affordable price, in your own home.</p>
-          <div class="video">
-            <img src="./img/body/about/shutterstock_324427688.png" alt="">
-            <img src="./img/body/about/play button.png" alt="" class="play-button">
+      <section class="about">
+        <img src="./img/body/about/Vector Smart Object.png" class="background flower">
+          <div class="about-card">
+            <h1 class="about-topic">Everyone's Yoga</h1>
+            <p class="about-text">We offers over 4,000 professionally-filmed online yoga classes taught by experienced, certified yoga teachers to customers around the world. 
+              We belive that yoga should be accessible to everyone and our classes are designed to give you an in-studio experience, at an affordable price, in your own home.</p>
+              <img src="./img/body/about/shutterstock_324427688.png" alt="">
           </div>
-        </div>
-        <div class="about-pros">
-          <ul class="pros">
-            <li><div class="icon-border"><img src="./img/body/about/017-yoga.png" class="icon icon1"></div><h2 class="reason-topic">Balance Body & Mind</h2><p class="reason">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standart.</p></li>
-            <li><div class="icon-border"><img src="./img/body/about/022-liposuction.png" class="icon icon2"></div><h2 class="reason-topic">Weight Loss</h2><p class="reason">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standart.</p></li>
-            <li><div class="icon-border"><img src="./img/body/about/om-1.png" class="icon icon3"></div><h2 class="reason-topic">Meditation Practice</h2><p class="reason">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standart.</p></li>
-            <li><div class="icon-border"><img src="./img/body/about/dove.png" class="icon icon4"></div><h2 class="reason-topic">Yoga is a way to freedom</h2><p class="reason">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standart.</p></li>
-            <li><div class="icon-border"><img src="./img/body/about/energy.png" class="icon icon5"></div><h2 class="reason-topic">Increased energy</h2><p class="reason">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standart.</p></li>
-          </ul>
-        </div>
-      </div>
-    </section>
+          <div class="about-pros">
+            <ul class="pros">
+              <li>
+                <div class="pros-card">
+                  <img src="./img/body/about/017-yoga.png" class="icon icon1">
+                  <div >
+                    <h2 class="reason-topic">Balance Body & Mind</h2>
+                    <p class="reason">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standart.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pros-card">
+                  <img src="./img/body/about/022-liposuction.png" class="icon icon2">
+                  <div>
+                    <h2 class="reason-topic">Weight Loss</h2>
+                    <p class="reason">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standart.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pros-card">
+                  <img src="./img/body/about/om-1.png" class="icon icon3">
+                  <div>
+                    <h2 class="reason-topic">Meditation Practice</h2>
+                    <p class="reason">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standart.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pros-card">
+                  <img src="./img/body/about/dove.png" class="icon icon4">
+                  <div>
+                    <h2 class="reason-topic">Yoga is a way to freedom</h2>
+                    <p class="reason">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standart.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pros-card last">
+                  <img src="./img/body/about/energy.png" class="icon icon5">
+                  <div>
+                    <h2 class="reason-topic">Increased energy</h2>
+                    <p class="reason">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standart.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+      </section>
     <section class="classes">
       <div class="dec-lotus">
       </div>

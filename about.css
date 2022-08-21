@@ -1,139 +1,66 @@
 
-.about { 
-    height: 1100px;
-    background-image: url(./img/body/about/Vector\ Smart\ Object.png);
-    background-repeat: no-repeat;
-    background-position: top 200px right;
-}
-.about-main {
-    position: relative;
-    top: 250px;
-    margin-left: 370px;
-    padding-left: 0;
-    padding-right: 0;
-    display: grid;
-    grid-template-columns: 0.5fr 1fr ;
-    grid-template-areas: 
-                         ".  pros "
-                         "about  pros "
-                         "about  pros "
-                         ".  pros ";
-    gap: 10px;
+.about{
+    display: flex;
 
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+
+    margin-bottom: 5%;
+
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+}
+
+.flower{
+    padding-top: 5rem;
+    right: 0;
+}
+
+.pros-card{
+    display: flex;
+    margin-bottom: 10%;
+}
+
+.last{
+    margin-bottom: 0;
+}
+
+.icon{
+    align-self: center;
+    margin-right: 5%;
+}
+
+.about-card{
+    padding-top: 15rem;
+    width: 30%;
+    margin-right: 10rem;
+}
+
+.about-pros{
+    padding-top: 5rem;
+    width: 30%;
+}
+
+.about-topic{
+    margin-bottom: 3%;
+    font-family: "Poppins";
+    font-size: 48px;
+    font-weight: 300;
+    color: #7492ec;
+    
 }
 
 .about-text {
-    grid-area: about;
-    position: relative;
-    top: 90px;
-    margin-left: 0;
-    font-family: 'Lato';
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    margin-top: 90px;
-}
-
-/* about-text h1 нельзя писать стили каскадно. Только один класс! исправить ВЕЗДЕ! */
-.about-text h1 {
-    font-size: 48px;;
-    color: #4c77eb;
-    margin-bottom: 25px;
-    margin-top: 0;
-    font-weight: 300;
-    line-height: 28px;
-}
-
-
-.about-text p {
-    margin-top: 0;
-    margin-bottom: 50px;
-}
-
-.about-pros {
-    grid-area: pros;
-}
-
-.pros li {
-    margin-bottom: 20px;
-    display: grid;
-    grid-template-columns: 0.2fr 1fr;
-    grid-template-areas: ". topic"
-                         "emb reason";
+    margin-bottom: 10%;
 }
 
 .reason-topic {
-    grid-area: topic;
-    justify-self: start;
-    color: black;
-    font-weight: bold;
-    font-family: "Poppins";
+    margin-bottom: 5%;
+    font-family: 'Poppins';
     font-size: 18px;
-    line-height: 48px;
-    margin: 0px;
+    font-weight: 500;
+    color: #000;
 }
-
-.reason {
-    grid-area: reason;
-    color:black;
-    font-size: 14px;
-    font-family: 'Lato';
-    font-weight: 400;
-    line-height: 24px;
-    width: 450px;
-    margin-top: 0px;
-}
-
-
-.icon-border{
-    grid-area: emb;
-    /* position: relative;
-    left: 40px;
-    right: 20px;
-    bottom: 20px; */
-    /* Нельзя так верстать. Используй для этого обычные отступы */
-    align-self: center;
-    justify-self: left;
-    padding: 15px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px solid #4c77eb;
-}
-
-.icon1 {
-    position: relative;
-    bottom: 7px;
-    left: 3px;
-}
-
-.icon2 {
-    position: relative;
-    bottom: 5px;
-    right: 3px;
-}
-
-.icon3 {
-    position: relative;
-    bottom: 6px;
-    left: 2px;
-}
-
-.icon4 {
-    position: relative;
-    bottom: 5px;
-    right: 1px;
-}
-
-.icon5 {
-    position: relative;
-    bottom: 2px;
-    right: 1px;
-}
-
-.play-button{
-    position: relative;
-    bottom: 215px;
-    left: 255px;
-}
-

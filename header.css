@@ -1,65 +1,87 @@
+header {
 
+    padding: 50px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 200px;
+}
 
-.header-block {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas: "logo menu menu"
-                         ". banner banner"
-                         ". banner banner";
-    gap: 20px;
-    /* Грид это конечно фенси шменси но сделай на флексах по братски */
+.background{
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+}
 
-    /* сделать padding только тут и убери его у детей */
+.woman{ 
+    top: 0;
+    left: 0;
+}
+
+.header-menu{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7%;
+}
+
+.banner-container{
+    display: flex;
+    justify-content: flex-end;
+
 }
 
 .banner {
-    grid-area: banner;
-    font-size: 72px;
-    line-height: 100px;
+    padding-right: 17%;
+    font-size: 4.5rem;
     font-family: "Poppins";
     font-weight: 300;
     color: #4c77eb;
-    justify-self: center;
-    padding-left: 384px;
-    padding-top: 70px;
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
 }
 
-.logo {
-    grid-area: logo;
-    justify-self: start;
-    padding-left: 30px;
-    padding-top: 25px;
+.banner-second-line{
+    text-indent: 20px;
+}
+
+.banner-third-line{
+    text-indent: 40px;
 }
 
 .menu-button {
-    display: inline;
-    margin-right: 20px;
+    display: inline;  
 }
 
 .menu-list {
-    display: flex;
+    display: inline;
     font-family: "Poppins";
-    grid-area: menu;
-    justify-self: end;
-    margin-right: 40px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
 }
 
-.menu-button a {
+.menu-link {
     color: #8ea2dc;
+    padding-right: 1.5em;
 }
 
-.menu-button a:hover {
+.menu-link:hover {
     color: #4c77eb;
     text-shadow:0 0 10px #8ea2dc
 }
 
 .trial-button {
-    padding-top: 10px;
+    width: 200px;
+    height: 40px;
+    border-top: 30px;
+    border-bottom: 30px;
+    border-radius: 20px;
+    background-color: #7492ec;
+    border: 0px;
+    font-family: "Poppins";
+    color: white;
+    font-weight: bold;
+    font-size: 90%;;
+}
+
+.trial-button:hover {
+    text-shadow:0 0 10px white;
 }
