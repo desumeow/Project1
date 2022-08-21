@@ -3,8 +3,6 @@
  <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="about.css">
   <link rel="stylesheet" href="classes.css">
   <link rel="stylesheet" href="promo.css">
   <link rel="stylesheet" href="gallery.css">
@@ -12,13 +10,18 @@
   <link rel="shortcut icon" href="./img/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>Wand Yoga</title>
+  <script>
+    function myFunction(){    
+    alert("Your button was pressed");
+    };
+  </script>
  </head>
  <body>
   <header class="page-header">
     <img src="./img/header/headerimg.png" class="background woman">
     <div class="header-menu">
       <img src="./img/header/logo.png" alt="logo" >
-      <div>
+      <div class="menu-box">
         <ul class="menu-list">
           <li class="menu-button"><a href="" class="menu-link">Home</a></li>
           <li class="menu-button"><a href="" class="menu-link">About Us</a></li>
@@ -27,7 +30,7 @@
           <li class="menu-button"><a href="" class="menu-link">Blog</a></li>
           <li class="menu-button"><a href="" class="menu-link">Login</a></li>
         </ul>
-        <button type="submit" class="trial-button">START YOUR FREE TRIAL</button>
+        <button class="trial-button highlight-white-txt">START YOUR FREE TRIAL</button>
       </div>
     </div>
     <div class="banner-container">
@@ -49,7 +52,7 @@
           </div>
           <div class="about-pros">
             <ul class="pros">
-              <li>
+              <li class="pros-card-li">
                 <div class="pros-card">
                   <img src="./img/body/about/017-yoga.png" class="icon icon1">
                   <div >
@@ -58,7 +61,7 @@
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="pros-card-li">
                 <div class="pros-card">
                   <img src="./img/body/about/022-liposuction.png" class="icon icon2">
                   <div>
@@ -67,7 +70,7 @@
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="pros-card-li">
                 <div class="pros-card">
                   <img src="./img/body/about/om-1.png" class="icon icon3">
                   <div>
@@ -76,7 +79,7 @@
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="pros-card-li">
                 <div class="pros-card">
                   <img src="./img/body/about/dove.png" class="icon icon4">
                   <div>
@@ -85,7 +88,7 @@
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="pros-card-li last">
                 <div class="pros-card last">
                   <img src="./img/body/about/energy.png" class="icon icon5">
                   <div>
@@ -98,19 +101,17 @@
           </div>
       </section>
     <section class="classes">
-      <div class="dec-lotus">
-      </div>
+      <img src="./img/body/classes/Vector Smart Object.png" alt="" class="dec-lotus"> 
+      <h2 class="classes-topic">Our Classes</h2>
       <div class="classes-main">
-        <h2 class="classes-topic">Our Classes</h2>
-        <div class="classes-content">
-          <button class="control highlight-txt" onclick="myFunction();">&#60;</button>
+        <button class="control highlight-txt" onclick="myFunction();">&#60;</button>
           <div class="classes-pos">
             <img src="./img/body/classes/shutterstock_434041555.png" alt="" class="">
             <h3 class="class-name">Seated and Supine Poses for Beginners</h3>
             <ul class="class-info">
-              <li>7:00am - 11:00am</li>
-              <li>Simon Park</li>
-              <li>Advanced</li>
+              <li class="info-li">7:00am - 11:00am</li>
+              <li class="info-li">Simon Park</li>
+              <li class="info-li">Advanced</li>
             </ul>
             <p class="about-class">Welcome to part 5 of our begginer series with Simon Park!</p>
           </div>
@@ -118,9 +119,9 @@
             <img src="./img/body/classes/shutterstock_125357459.png" alt="">
             <h3 class="class-name">Work toward Compass Pose</h3>
             <ul class="class-info">
-              <li>7:00am - 11:00am</li>
-              <li>Simon Park</li>
-              <li>Advanced</li>
+              <li class="info-li">7:00am - 11:00am</li>
+              <li class="info-li">Simon Park</li>
+              <li class="info-li">Advanced</li>
             </ul>
             <p class="about-class">Stretch shoulders, hips, and hamstrings as you work towards Compass Pose (Parivrtta Surya Yantrasana).</p>
           </div>
@@ -128,9 +129,9 @@
             <img src="./img/body/classes/3.png" alt="">
             <h3 class="class-name">Handstand Variations and Transitions</h3>
             <ul class="class-info">
-              <li>7:00am - 11:00am</li>
-              <li>Simon Park</li>
-              <li>Advanced</li>
+              <li class="info-li">7:00am - 11:00am</li>
+              <li class="info-li">Simon Park</li>
+              <li class="info-li">Advanced</li>
             </ul>
             <p class="about-class">Explore handstand variations and transitions in this advanced class. A brief warm up will prepare you to play with inversions!</p>
           </div>
@@ -138,15 +139,15 @@
             <img src="./img/body/classes/4.png" alt="">
             <h3 class="class-name">Advanced Backbending</h3>
             <ul class="class-info">
-              <li>7:00am - 11:00am</li>
-              <li>Simon Park</li>
-              <li>Advanced</li>
+              <li class="info-li">7:00am - 11:00am</li>
+              <li class="info-li">Simon Park</li>
+              <li class="info-li">Advanced</li>
             </ul>
             <p class="about-class">Amanda Botur has created a class to help you prepare for the hormonal shifts and rising emotions that may occur in the days...</p>
           </div>
-          <button class="control inactive highlight-txt" onclick="myFunction();">&gt;</button>
-        </div>
+          <button class="control highlight-txt inactive" onclick="myFunction();">&gt;</button> 
       </div>
+      
     </section>
     <section class="promo">
       <h2 class="p-topic">Tap into your inner fountain of youth.</h2>
@@ -190,11 +191,6 @@
             </svg>
           </div>
           </button>
-          <script>
-            function myFunction(){    
-            alert("Your button was pressed");
-            };
-          </script>
         </div>
       </div>
       <div class="team-table-main">

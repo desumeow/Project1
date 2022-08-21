@@ -81,6 +81,13 @@ ul {
     padding-left: 0;
 }
 
+h1, h2, h3 {
+    font-family: "Poppins";
+}
+
+p {
+    font-family: "Lato";
+}
 /**/
 
 
@@ -103,6 +110,269 @@ a{
 a:hover{
     color: white;
     text-shadow:0 0 10px white;
+}
+
+header {
+
+    padding: 50px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 200px;
+}
+
+.background{
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.woman{ 
+    top: 0;
+    left: 0;
+}
+
+.header-menu{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7%;
+}
+
+.banner-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banner {
+    padding-right: 17%;
+    font-size: 4.5rem;
+    font-family: "Poppins";
+    font-weight: 300;
+    color: #4c77eb;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.banner-second-line{
+    text-indent: 20px;
+}
+
+.banner-third-line{
+    text-indent: 40px;
+}
+
+.menu-box{
+    display: flex;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+    font-family: "Poppins";
+}
+
+.menu-button{
+    padding-right: 1.5rem;
+}
+
+.menu-link {
+    color: #8ea2dc;
+}
+
+.menu-link:hover {
+    color: #4c77eb;
+    text-shadow:0 0 10px #8ea2dc
+}
+
+.trial-button {
+    width: auto;
+    height: 40px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-top: 30px;
+    border-bottom: 30px;
+    border-radius: 20px;
+    background-color: #7492ec;
+    border: 0px;
+    font-family: "Poppins";
+    color: white;
+    font-weight: bold;
+    font-size: 	0.75rem;
+}
+
+.about{
+    display: flex;
+
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+
+    padding-right: 3rem;
+    padding-left: 5rem;
+    margin-bottom: 7rem;
+
+    font-size: 0.87rem;
+    font-weight: 400;
+    color: #666;
+}
+
+.flower{
+    top: 0.5rem;
+    right: 0;
+}
+
+.pros-card-li{
+    margin-bottom: 3rem;
+}
+
+.pros-card{
+    display: flex;
+}
+
+.last{
+    margin-bottom: 0;
+}
+
+.icon{
+    align-self: center;
+    margin-right: 5%;
+}
+
+.about-card{
+    padding-top: 15rem;
+    width: 30%;
+    margin-right: 7.5rem;
+}
+
+.about-pros{
+    padding-top: 10rem;
+    width: 30%;
+}
+
+.about-topic{
+    margin-bottom: 3%;
+    font-size: 48px;
+    font-weight: 300;
+    color: #7492ec;
+    
+}
+
+.about-text {
+    margin-bottom: 10%;
+}
+
+.reason-topic {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #000;
+}
+
+.classes{
+    padding-bottom: 6rem;
+    background: url(./img/body/classes/Layer\ 14.png);
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    padding-left: 5rem;
+}
+
+.dec-lotus{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    pointer-events: none;
+}
+
+.classes-topic{
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+    color: #4c77eb;
+}
+
+.classes-main{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.classes-pos {
+    display: flex;
+    flex-basis: 18.75rem;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 1rem;
+}
+
+.classes-pos:last-of-type{
+    margin-right: 0;
+}
+
+.class-name {
+    height: 50px;
+    font-size: 18px;
+    color: #4c77eb;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.class-info {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+.info-li {
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 13px;
+    font-family: "Lato";
+    font-weight: 400;
+    color: #999;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.info-li:nth-child(1) {
+    background-image: url(./img/body/classes/time.png);
+}
+
+.info-li:nth-child(2) {
+    background-image: url(./img/body/classes/teacher.png);
+}
+
+.info-li:nth-child(3) {
+    background-image: url(./img/body/classes/lvil.png);
+    margin-bottom: 0px;
+
+}
+
+.about-class {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+}
+
+.control{
+    position: relative;
+    height: 30px;
+    background: none;
+    border: none;
+    font-size: 25px;
+    font-family: "Poppins";
+    color: #4c77eb;
+}
+
+.control:first-child{
+    right: 1rem;
+    top: 5.5rem;
+}
+
+.control:last-child{
+    left: 1rem;
+    top: 5.5rem;
 }
 
 .team {
@@ -488,4 +758,23 @@ a:hover{
 .footer-menu-list>li>a:hover{
     color: white;
     text-shadow:0 0 10px white;
+}
+
+
+.highlight:hover{
+    box-shadow: inset #fff 0 0 40px 0px,
+	                  #fff 0 0 15px 0px;
+}
+
+.highlight-txt:hover{
+    text-shadow:0 0 10px #8ea2dc
+}
+
+.highlight-white-txt:hover{
+    text-shadow:0 0 10px #fff;
+}
+
+.inactive {
+    color: #bbb!important;
+    text-shadow: none!important;
 }
