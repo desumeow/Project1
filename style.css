@@ -230,13 +230,25 @@ header {
     display: flex;
 }
 
-.last{
-    margin-bottom: 0;
+.pros-card-text{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
+
+.reason-topic {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #000;
+}
+
+
+
 
 .icon{
     align-self: center;
-    margin-right: 5%;
+    margin-right: 2rem;
 }
 
 .about-card{
@@ -261,20 +273,14 @@ header {
 .about-text {
     margin-bottom: 10%;
 }
-
-.reason-topic {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: #000;
-}
-
 .classes{
     padding-bottom: 6rem;
     background: url(./img/body/classes/Layer\ 14.png);
     background-repeat: no-repeat;
     background-size: auto auto;
     padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 8rem;
 }
 
 .dec-lotus{
@@ -375,163 +381,203 @@ header {
     top: 5.5rem;
 }
 
-.team {
-    width: 100%;
-    height: 1000px;
+.promo {
     margin: 0;
     padding: 0;
-    margin-top: 100px;
+    display: block;
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+.p-topic {
+    font-size: 32px;
+    font-family: "Poppins";
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.p-txt {
+    font-size: 14px;
+    font-family: 'Lato';
+    font-weight: 400;
+    margin-bottom: 5rem;
+}
+
+.promobut{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 5rem;
+    padding-right: 2rem;
+    padding-bottom: 7rem;
+}
+
+.galimg {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.galimg2 {
+    margin-left: 2px;
+}
+
+.galimg3, .galimg5{
+    margin-right: 0;
+}
+
+.galimg4, .galimg5{
+    margin-bottom: 0;
+}
+
+.team {
+    margin: 0;
+    padding: 0;
     background: url(./img/body/team/background.png) no-repeat;
 }
 
 
 .team-preview {
-    width: 100%;
-    height: 400px;
-    margin: 0;
-    padding-top: 100px; 
+    padding-top: 8rem;
+    padding-bottom: 5rem;
     display: block;
     text-align: center;
 }
 
 .t-topic {
+    margin-bottom: 1rem;
     font-size: 32px;
     font-family: "Poppins";
     font-weight: 300;
-    line-height: 36px;
     color: white;
 }
 
 .t-txt {
+    margin-bottom: 5rem;
     font-size: 14px;
-    line-height: 24px;
     font-family: 'Lato';
     font-weight: 400;
     color: white;
 }
 
-.meetot {
-    margin-top: 50px;
+.meetot-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.meetot{
     font-family: "Poppins";
     color: white;
     font-size: 14px;
-    line-height: 36px;
     font-weight: 500;
+    margin-bottom: 2rem;
 }
 
 .button-down {
-    position: absolute;
-    right: 940px;
-    background: none;
+    padding: 20px;
+    background-image: url(./img/body/team/Ellipse\ 10.png);
+    background-repeat: no-repeat;
+    background-position: center;
     border: none;
-    height: 50px;
-    width: 50px;
-}
-
-.button-border{
-    position: relative;
-    right: 5px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 5px solid white;
-}
-
-.team-table-main {
-    width: 100%;
-    height: 600px;
 }
 
 .team-table {
     display: flex;
-    margin-top: 110px;
-    margin-left: 220px;
-    margin-right: 420px;
-    width: 1500px;
-    gap: 25px;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-left: 20rem;
+    padding-right: 25rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
 }
 
 .teammate {
-    display: grid;
-    grid-template-columns: 82px 200px;
-    grid-template-areas: "photo name"
-                         "photo job";
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+}
+
+.teammate:nth-child(4n+4){
+    margin-right: 0;
+}
+
+.team-card-text{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .photo {
-    grid-area: photo;
-    position: relative;
-    top: 15px;
+    align-self: center;
+    margin-right: 1rem;
 }
 
 .name {
-    grid-area: name;
-    position: relative;
-    top: 15px;
-    left: 20px;
     font-family: "Poppins";
     font-size: 16px;
     font-weight: 600;
-    line-height: 24px;
 }
 
 .job {
-    grid-area: job;
-    position: relative;
-    bottom: 15px;
-    left: 20px;
     font-family: "Lato";
     font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
     color: grey;
 }
 
-.noname {
-    width: 100%;
-    height: 681px;
-    margin: 0px;
-    padding: 0;
-    margin-top: 100px;
-    background: url(./img/body/noname/background.png) no-repeat;
-
-}
-
-.noname-txt-content {
-    width: 500px;
-    display: block;
+.challenge {
     position: relative;
-    left: 500px;
-    top: 260px;
+    z-index: 1;
+    background-color: #F8F7FC;
+    padding-top: 14rem;
+    padding-left: 32rem;
+    padding-bottom: 13.5rem;
 }
 
-.noname-topic {
-    width: 500px;
+.challenge-box{
+    display: flex;
+    align-items: flex-start;
+}
+
+.challenge-txt-content {
+    display: block;
+}
+
+.challenge-topic {
     font-family: "Poppins";
     font-weight: 300;
     font-size: 48px;
-    line-height: 28px;
     color: #7492ec;
 }
 
-.noname-text {
-    width: 500px;
-    font-family: "Lato";
-    font-weight: 400;
+.challenge-text {
+    width: 33%;
     font-size: 21px;
-    line-height: 36px;
+    line-height: 2rem;
     color: #8ea2dc;
-    padding-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .womanimg {
-    position: relative;
-    top: -330px;
-    left: 1150px;
+    position: absolute;
+    z-index: -1;
+    right: 30.5rem;
+    bottom: 0;
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
@@ -539,32 +585,30 @@ header {
 }
 
 .logotypes {
-    width: 100%;
-    height: 150px;
-
-}
-
-.logo-showcase {
     display: flex;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    margin-left: 375px;
-    margin-right: 375px;
-    gap: 150px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
+.partner-logo{
+    margin-right: 12rem;
+}
+.partner-logo:last-of-type{
+    margin-right: 0;
+}
 
 .top {
-    height: 111px;
     background-color: #191919;
     display: flex;
 }
 
-.derp{
-    width: 641px;
-    height: 111px;
+.border{
+    padding-right: 10rem;
+    padding-left: 23rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     border: solid 2px;
     border-color: #333333;
     border-top: none;
@@ -572,48 +616,36 @@ header {
     border-left: none;
 }
 
-.logo-footer{
-    padding-top: 22px;
-    padding-bottom: 26px;
-    padding-left: 372px;
-}
-
-.derp2 {
+.top-right {
     display: flex;
-    padding-left: 30px;
-    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
 }
-
-.derp-text{
-    margin-left: 10px;
-    padding: 5px;    
+.top-right-box{
+    margin-right: 21rem;
 }
-
-.derp-text h2{
+.top-topic{
     font-size: 16px;
     color: white;
     font-weight: 600;
-    line-height: 24px;
-    padding: 0;
     font-family: "Poppins";
 }
 
-.derp-text p{
+.top-text{
     font-family: "Lato";
     font-style: italic;
     font-size: 13px;
     color: #bbbbbb;
     font-weight: 500;
 }
+
 .subscription-wrap {
     position: relative;
-    top: 20px;
-    left: 250px;
 }
 
 .email {
-    position: absolute;
-    height: 55px;
+    height: 3rem;
     width: 300px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -636,9 +668,9 @@ header {
 
 .subscribe-button {
     position: absolute;
-    left: 230px;
-    height: 55px;
-    width: 150px;
+    left: 14rem;
+    height: 3rem;
+    width: 9rem;
     border-top: 30px;
     border-bottom: 30px;
     border-radius: 30px;
@@ -648,19 +680,18 @@ header {
     color: white;
     font-weight: 600;
     font-size: 12px;
-    line-height: 24px;
 }
 
 .mid {
-    height: 290px;
     background-color: #222;
     display: flex;
-    padding-left: 376px;
-    padding-top: 30px;
+    padding-left: 23rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
-.contacts{
-    width: 210px;
+.mid-marg{
+    margin-right: 7rem;
 }
 
 .footer-topic{
@@ -679,34 +710,24 @@ header {
     line-height: 24px;
     font-weight: 400;
     color: #bbb;
+    margin-bottom: 0.6rem;
 }
-.enter{
-    padding-bottom: 10px;
+
+.footer-txt:first-of-type{
+    margin-bottom: 0;
 }
 
 .social-networks{
     display: flex;
     list-style-type: none;
-    margin-left: 0; 
-    padding-left: 0;
 }
 
-.social-networks li{
-    padding-right: 10px;
+.social-li{
+    margin-right: .5rem;
 }
 
-.social-networks li:last-child{
-    padding-right: 0px;
-}
-
-.links{
-    width: 120px;
-    margin-left: 110px;
-}
-
-.open-hours{
-    margin-left: 110px;
-
+.social-li:last-child{
+    margin-right: 0px;
 }
 
 .trday{
@@ -717,45 +738,30 @@ header {
     padding-right: 30px;
 }
 
-.location{
-    margin-left: 110px;
-}
-
 .google-map{
     border-radius: 10px;
 }
 
 .bot{
-    height: 70px;
-    width: 1920px;
-    background-color: #191919;
     display: flex;
+    background-color: #191919;
     align-items: center;
-    justify-content: center;
-    position: absolute;
-}
-
-.built{
-    position: relative;
-    right: 165px;
+    justify-content: space-between;
+    padding-left: 23rem;
+    padding-right: 19rem;
 }
 
 .hearth{
     color: #85AF4B;
 }
 
-.footer-menu{
-    position: relative;
-    left: 175px;
-}
-
-.footer-menu-list>li>a{    
+.footer-menu-link{    
     font-family: "Poppins";
     font-size: 12px;
     color: #bbb;
 }
 
-.footer-menu-list>li>a:hover{
+.footer-menu-link:hover{
     color: white;
     text-shadow:0 0 10px white;
 }
@@ -777,4 +783,8 @@ header {
 .inactive {
     color: #bbb!important;
     text-shadow: none!important;
+}
+
+.last{
+    margin-bottom: 0;
 }
