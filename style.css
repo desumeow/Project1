@@ -276,6 +276,7 @@ header {
 .classes{
     padding-bottom: 6rem;
     background: url(./img/body/classes/Layer\ 14.png);
+    /* обьедини в одну картинку с цветком */
     background-repeat: no-repeat;
     background-size: auto auto;
     padding-left: 5rem;
@@ -319,6 +320,7 @@ header {
 
 .class-name {
     height: 50px;
+    /* надо сделать padding-bottom снизу так, чтобы была нужная высота. Не стоит ограничивать лишний раз по высоте блок с текстом */
     font-size: 18px;
     color: #4c77eb;
     font-weight: 500;
@@ -341,6 +343,7 @@ header {
     background-repeat: no-repeat;
 }
 
+/* поменяй nth-child на новую вёрстку */
 .info-li:nth-child(1) {
     background-image: url(./img/body/classes/time.png);
 }
@@ -352,7 +355,6 @@ header {
 .info-li:nth-child(3) {
     background-image: url(./img/body/classes/lvil.png);
     margin-bottom: 0px;
-
 }
 
 .about-class {
@@ -393,6 +395,7 @@ header {
 .p-topic {
     font-size: 32px;
     font-family: "Poppins";
+    /* лишняя строка. шрифт дублируется */
     font-weight: 300;
     margin-bottom: 1rem;
 }
@@ -481,6 +484,7 @@ header {
     margin-bottom: 2rem;
 }
 
+/* задай размеры через ширину и высоту */
 .button-down {
     padding: 20px;
     background-image: url(./img/body/team/Ellipse\ 10.png);
@@ -521,6 +525,7 @@ header {
     justify-content: center;
     align-items: flex-start;
 }
+/* текст справа не по центру в макете. переделай */
 
 .photo {
     align-self: center;
@@ -576,6 +581,7 @@ header {
 .womanimg {
     position: absolute;
     z-index: -1;
+    /* z index убери полностью */
     right: 30.5rem;
     bottom: 0;
     -moz-user-select: none;
@@ -642,6 +648,7 @@ header {
 
 .subscription-wrap {
     position: relative;
+    /* добавь паддинг справа равной недостающей ширины кнопки иначе она будет вылезать за экран */
 }
 
 .email {
@@ -699,6 +706,7 @@ header {
     font-family: "Poppins";
     font-size: 14px;
     line-height: 48px;
+    /* надо сделать адекватную высоту строку и задать отступы через margin/padding */
     font-weight: 600;
     color: #fff;
 }
@@ -720,6 +728,7 @@ header {
 .social-networks{
     display: flex;
     list-style-type: none;
+    /* переделай сетку по кайфу, как везде */
 }
 
 .social-li{
@@ -787,4 +796,35 @@ header {
 
 .last{
     margin-bottom: 0;
+}
+
+
+.gallery__container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.gallery__li {
+    padding: 10px;
+    width: 33%;
+}
+
+.gallery__li--double {
+    width: 66%;
+}
+
+.gallery__li--double img {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery__card {
+    height: 100%;
+    overflow: hidden;
 }

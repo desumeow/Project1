@@ -104,9 +104,14 @@
         <button class="control highlight-txt" onclick="myFunction();">&#60;</button>
           <div class="classes-pos">
             <img src="./img/body/classes/shutterstock_434041555.png" alt="" class="">
+            <!-- Надо вырезать только центр картинки. СДелать похожее закругление и тень -->
             <h3 class="class-name">Seated and Supine Poses for Beginners</h3>
             <ul class="class-info">
-              <li class="info-li">7:00am - 11:00am</li>
+              <li class="info-li">
+                7:00am - 11:00am
+                <!-- <div class="info-li__icon"><img src="" alt=""></div>
+                <div class="info-li__desc">7:00am - 11:00am</div>   -->
+              </li>
               <li class="info-li">Simon Park</li>
               <li class="info-li">Advanced</li>
             </ul>
@@ -152,13 +157,40 @@
         Unlimited acess for $15/month.</p>
       <button class="trial-button highlight-white-txt promobut">START YOUR 14-DAYFREE TRIAL</button>
     </section>
-    <section class="gallery">
+    <!-- <section class="gallery">
       <img src="./img/body/gallery/gal1.png" alt="image" class="galimg galimg1">
       <img src="./img/body/gallery/gal2.png" alt="image" class="galimg galimg2">
       <img src="./img/body/gallery/gal3.png" alt="image" class="galimg galimg3">
       <img src="./img/body/gallery/gal4.png" alt="image" class="galimg galimg4">
       <img src="./img/body/gallery/gal5.png" alt="image" class="galimg galimg5">
+    </section> -->
+
+    <!-- проверь, чтобы gallery была как в макете. я сделал от балды -->
+    <section class="gallery">
+      <div class="gallery__container">
+        <ul class="gallery__list">
+          <li class="gallery__li">
+            <div class="gallery__card"><img src="./img/body/gallery/gal1.png" alt="" class="gallery__img"></div>
+          </li>
+          <li class="gallery__li">
+            <div class="gallery__card"><img src="./img/body/gallery/gal2.png" alt="" class="gallery__img"></div>
+          </li>
+          <li class="gallery__li">
+            <div class="gallery__card"><img src="./img/body/gallery/gal3.png" alt="" class="gallery__img"></div>
+          </li>
+          <li class="gallery__li gallery__li--double">
+            <div class="gallery__card"><img src="./img/body/gallery/gal4.png" alt="" class="gallery__img"></div>
+          </li>
+          <li class="gallery__li">
+            <div class="gallery__card"><img src="./img/body/gallery/gal5.png" alt="" class="gallery__img"></div>
+          </li>
+        </ul>
+      </div>
     </section>
+
+
+
+    <!-- убери team. перенеси bg в team-preview -->
     <section class="team">
       <div class="team-preview">
         <h2 class="t-topic">The Most Experienced Yoga Instructors</h2>
@@ -303,7 +335,9 @@
           <p class="footer-txt enter">Alistudios@gmail.com</p>
           <p class="footer-txt">+61 3 8376 6284</p>
         </p>
+        <!-- тег закрывается, но не открывается. Вот это да. -->
           <ul class="social-networks mid-marg">
+            <!-- ссылке задай display: block, чтобы была правильная высота элемента -->
             <li class="social-li"><a href=""><img src="./img/footer/facebook.png" alt="facebook"></a></li>
             <li class="social-li"><a href=""><img src="./img/footer/twitter.png" alt="twitter"></a></li>
             <li class="social-li"><a href=""><img src="./img/footer/google+.png" alt="google+"></a></li>
@@ -312,6 +346,7 @@
         </div>
         <div class="links mid-marg">
           <h2 class="footer-topic">Useful Links</h2>
+          <!-- убирай все br. используй их только внутри одной строки текста. Ссылки надо сделать блочными и тогда всё будет норм -->
           <a href="" class="footer-txt">About Us</a> <br>
           <a href="" class="footer-txt">Advertise</a> <br>
           <a href="" class="footer-txt">Terms & Conditions</a> <br>
