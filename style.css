@@ -96,6 +96,7 @@ html {
     -ms-overflow-style: none;
     scrollbar-width: none;
     scroll-behavior: smooth;
+
 }
 
 html::-webkit-scrollbar {
@@ -143,7 +144,7 @@ header {
 }
 
 .banner {
-    padding-right: 17%;
+    padding-right: 20rem;
     font-size: 4.5rem;
     font-family: "Poppins";
     font-weight: 300;
@@ -165,6 +166,7 @@ header {
 .menu-box{
     display: flex;
     align-items: center;
+    margin-left:auto
 }
 
 .menu-list {
@@ -208,17 +210,15 @@ header {
     position: relative;
     z-index: 2;
 
-    padding-right: 3rem;
-    padding-left: 5rem;
-    margin-bottom: 7rem;
+    padding-bottom: 8rem;
 
-    font-size: 0.87rem;
+    font-size: 14px;
     font-weight: 400;
     color: #666;
 }
 
 .flower{
-    top: 0.5rem;
+    top: 5rem;
     right: 0;
 }
 
@@ -243,23 +243,20 @@ header {
     color: #000;
 }
 
-
-
-
 .icon{
     align-self: center;
-    margin-right: 2rem;
+    margin-right: 30px;
 }
 
 .about-card{
-    padding-top: 15rem;
-    width: 30%;
+    padding-top: 19rem;
+    width: 50%;
     margin-right: 7.5rem;
 }
 
 .about-pros{
     padding-top: 10rem;
-    width: 30%;
+    width: 50%;
 }
 
 .about-topic{
@@ -273,15 +270,17 @@ header {
 .about-text {
     margin-bottom: 10%;
 }
+
 .classes{
     padding-bottom: 6rem;
-    background: url(./img/body/classes/Layer\ 14.png);
+    background: url(./img/body/classes/classes_background.png);
     /* обьедини в одну картинку с цветком */
     background-repeat: no-repeat;
     background-size: auto auto;
     padding-left: 5rem;
     padding-right: 5rem;
     padding-bottom: 8rem;
+    padding-top: 6.5rem;
 }
 
 .dec-lotus{
@@ -292,7 +291,7 @@ header {
 }
 
 .classes-topic{
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     font-size: 3rem;
     font-weight: 300;
     text-align: center;
@@ -311,20 +310,29 @@ header {
     flex-basis: 18.75rem;
     flex-direction: column;
     align-items: flex-start;
-    margin-right: 1rem;
+    margin-right: 30px;
 }
 
 .classes-pos:last-of-type{
     margin-right: 0;
 }
 
+.classes-image-container{
+    margin-bottom: 32px;
+}
+
+.classes-image{
+    border-radius: 10px;
+
+}
+
 .class-name {
-    height: 50px;
-    /* надо сделать padding-bottom снизу так, чтобы была нужная высота. Не стоит ограничивать лишний раз по высоте блок с текстом */
+    height: 53px;
+    overflow: hidden;
     font-size: 18px;
     color: #4c77eb;
     font-weight: 500;
-    margin-bottom: 1rem;
+    margin-bottom: 0.875rem;
 }
 
 .class-info {
@@ -333,28 +341,20 @@ header {
 }
 
 .info-li {
-    padding-left: 1.5rem;
+    display: flex;
     margin-bottom: 0.5rem;
     font-size: 13px;
     font-family: "Lato";
     font-weight: 400;
     color: #999;
-    background-position: 0 0;
-    background-repeat: no-repeat;
 }
 
-/* поменяй nth-child на новую вёрстку */
-.info-li:nth-child(1) {
-    background-image: url(./img/body/classes/time.png);
+.info-li__icon{
+    margin-right: 13px;
 }
 
-.info-li:nth-child(2) {
-    background-image: url(./img/body/classes/teacher.png);
-}
-
-.info-li:nth-child(3) {
-    background-image: url(./img/body/classes/lvil.png);
-    margin-bottom: 0px;
+.info-li:last-child{
+    margin-bottom: 0;
 }
 
 .about-class {
@@ -373,14 +373,14 @@ header {
     color: #4c77eb;
 }
 
-.control:first-child{
-    right: 1rem;
-    top: 5.5rem;
+.prev{
+    left: 14.6rem;
+    top: 6.9rem;
 }
 
-.control:last-child{
-    left: 1rem;
-    top: 5.5rem;
+.next{
+    left: 3rem;
+    top: 4.96rem;
 }
 
 .promo {
@@ -394,8 +394,6 @@ header {
 
 .p-topic {
     font-size: 32px;
-    font-family: "Poppins";
-    /* лишняя строка. шрифт дублируется */
     font-weight: 300;
     margin-bottom: 1rem;
 }
@@ -416,40 +414,53 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-left: 5rem;
-    padding-right: 2rem;
-    padding-bottom: 7rem;
+    padding-bottom: 120px;
+
 }
 
-.galimg {
-    margin-right: 30px;
-    margin-bottom: 30px;
+.gallery__container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.galimg2 {
-    margin-left: 2px;
+.gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -13px;
 }
 
-.galimg3, .galimg5{
-    margin-right: 0;
+.gallery__li {
+    padding: 13px;
+    width: 33.3333333333%;
 }
 
-.galimg4, .galimg5{
-    margin-bottom: 0;
+.gallery__li--double {
+    width: 66.6666666666%;
+}
+
+.gallery__li--double img {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery__card {
+    height: 100%;
+    overflow: hidden;
 }
 
 .team {
     margin: 0;
     padding: 0;
-    background: url(./img/body/team/background.png) no-repeat;
-}
 
+}
 
 .team-preview {
     padding-top: 8rem;
     padding-bottom: 5rem;
     display: block;
     text-align: center;
+    background: url(./img/body/team/background.png) no-repeat;
 }
 
 .t-topic {
@@ -484,48 +495,45 @@ header {
     margin-bottom: 2rem;
 }
 
-/* задай размеры через ширину и высоту */
 .button-down {
-    padding: 20px;
+    width: 40px;
+    height: 40px;
     background-image: url(./img/body/team/Ellipse\ 10.png);
     background-repeat: no-repeat;
     background-position: center;
     border: none;
 }
 
+.team{
+    max-width: 1200px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .team-table {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-around;
-    padding-left: 20rem;
-    padding-right: 25rem;
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+    margin: -15px;
 }
 
 .teammate {
-    width: 20%;
+    width: 25%;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: start;
-    margin-right: 3rem;
-    margin-bottom: 3rem;
-}
+    padding: 15px;
 
-.teammate:nth-child(4n+4){
-    margin-right: 0;
 }
 
 .team-card-text{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    padding-top: 0.5rem;
 }
-/* текст справа не по центру в макете. переделай */
 
 .photo {
     align-self: center;
@@ -580,8 +588,6 @@ header {
 
 .womanimg {
     position: absolute;
-    z-index: -1;
-    /* z index убери полностью */
     right: 30.5rem;
     bottom: 0;
     -moz-user-select: none;
@@ -592,45 +598,62 @@ header {
 
 .logotypes {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
     padding-top: 5rem;
     padding-bottom: 5rem;
+}
+
+.logotypes__container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logotypes__list{
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    margin: -85px;
 }
-.partner-logo{
-    margin-right: 12rem;
+
+.logotypes__li {
+    padding: 85px;
+    width: 20%;
 }
-.partner-logo:last-of-type{
-    margin-right: 0;
+
+.logotypes__card{
+    height: 100%;
+    overflow: hidden;
 }
 
 .top {
     background-color: #191919;
     display: flex;
+    
 }
 
 .border{
-    padding-right: 10rem;
-    padding-left: 23rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-right: 210px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border: solid 2px;
     border-color: #333333;
     border-top: none;
     border-bottom: none;
     border-left: none;
 }
+.top-right-box{
+    margin-right: 264px;
+}
 
 .top-right {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-left: 2rem;
+    padding-left: 45px;
 }
-.top-right-box{
-    margin-right: 21rem;
-}
+
 .top-topic{
     font-size: 16px;
     color: white;
@@ -648,7 +671,7 @@ header {
 
 .subscription-wrap {
     position: relative;
-    /* добавь паддинг справа равной недостающей ширины кнопки иначе она будет вылезать за экран */
+    padding-right: 67px;  
 }
 
 .email {
@@ -692,51 +715,74 @@ header {
 .mid {
     background-color: #222;
     display: flex;
-    padding-left: 23rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-family: "Lato";
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #bbb;
 }
 
 .mid-marg{
-    margin-right: 7rem;
+    margin-right: 130px;
 }
 
 .footer-topic{
     margin: 0;
     font-family: "Poppins";
     font-size: 14px;
-    line-height: 48px;
-    /* надо сделать адекватную высоту строку и задать отступы через margin/padding */
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     font-weight: 600;
     color: #fff;
 }
 
 .footer-txt{
+    display: block;
     margin: 0;
-    font-family: "Lato";
-    font-size: 13px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #bbb;
     margin-bottom: 0.6rem;
+}
+
+.footer-link{
+    display: block;
+    margin: 0;
+    color: #bbb;
 }
 
 .footer-txt:first-of-type{
     margin-bottom: 0;
 }
 
-.social-networks{
+.footer-txt:last-child{
+    margin-bottom: 0px;
+}
+
+.footer-text-box{
+    margin-bottom: 27px;
+}
+
+.social-container{
+    max-width: 183px;
+}
+
+.social-list{
     display: flex;
-    list-style-type: none;
+    flex-wrap: wrap;
+    margin: -5px;
     /* переделай сетку по кайфу, как везде */
 }
 
 .social-li{
-    margin-right: .5rem;
+    width: 25%;
 }
 
-.social-li:last-child{
-    margin-right: 0px;
+.social__card{
+    height: 100%;
+    overflow: hidden;
+}
+.social-li__a{
+    display: block;
 }
 
 .trday{
@@ -752,12 +798,7 @@ header {
 }
 
 .bot{
-    display: flex;
     background-color: #191919;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 23rem;
-    padding-right: 19rem;
 }
 
 .hearth{
@@ -794,37 +835,16 @@ header {
     text-shadow: none!important;
 }
 
-.last{
-    margin-bottom: 0;
+.fmenu:last-child{
+    padding-right: 0;
 }
 
-
-.gallery__container {
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
-.gallery__list {
+.width-container{
     display: flex;
-    flex-wrap: wrap;
-    margin: -10px;
-}
-
-.gallery__li {
-    padding: 10px;
-    width: 33%;
-}
-
-.gallery__li--double {
-    width: 66%;
-}
-
-.gallery__li--double img {
-    width: 100%;
-    height: 100%;
-}
-
-.gallery__card {
-    height: 100%;
-    overflow: hidden;
+    position: relative;
+    max-width: 1200px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
