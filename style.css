@@ -725,7 +725,7 @@ header {
 }
 
 .mid-marg{
-    margin-right: 130px;
+    margin-right: 120px;
 }
 
 .footer-topic{
@@ -763,13 +763,12 @@ header {
 }
 
 .social-container{
-    max-width: 183px;
+    max-width: 200px;
 }
 
 .social-list{
     display: flex;
     flex-wrap: wrap;
-    margin: -5px;
     /* переделай сетку по кайфу, как везде */
 }
 
