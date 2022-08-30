@@ -215,11 +215,10 @@ header {
     font-size: 14px;
     font-weight: 400;
     color: #666;
-}
 
-.flower{
-    top: 5rem;
-    right: 0;
+    background-image: url(./img/body/about/Vector\ Smart\ Object.png);
+    background-repeat: no-repeat;
+    background-position: right 5rem;
 }
 
 .pros-card-li{
@@ -272,26 +271,17 @@ header {
 }
 
 .classes{
-    padding-bottom: 6rem;
+    padding-bottom: 8rem;
     background: url(./img/body/classes/classes_background.png);
-    /* обьедини в одну картинку с цветком */
     background-repeat: no-repeat;
     background-size: auto auto;
     padding-left: 5rem;
     padding-right: 5rem;
-    padding-bottom: 8rem;
     padding-top: 6.5rem;
 }
 
-.dec-lotus{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    pointer-events: none;
-}
-
 .classes-topic{
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     font-size: 3rem;
     font-weight: 300;
     text-align: center;
@@ -304,6 +294,18 @@ header {
     align-content: center;
 
 }
+
+.classes__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -13px;
+}
+
+.classes__li {
+    padding: 13px;
+    width: 25%;
+}
+
 
 .classes-pos {
     display: flex;
@@ -318,6 +320,9 @@ header {
 }
 
 .classes-image-container{
+    width: 270px;
+    height: 200px;
+    background-size: cover;
     margin-bottom: 32px;
 }
 
@@ -364,7 +369,7 @@ header {
 }
 
 .control{
-    position: relative;
+    position: absolute;
     height: 30px;
     background: none;
     border: none;
@@ -374,13 +379,13 @@ header {
 }
 
 .prev{
-    left: 14.6rem;
-    top: 6.9rem;
+    left: -3rem;
+    top: 13.5rem;
 }
 
 .next{
-    left: 3rem;
-    top: 4.96rem;
+    right: -3rem;
+    top: 13.5rem;
 }
 
 .promo {
@@ -396,6 +401,7 @@ header {
     font-size: 32px;
     font-weight: 300;
     margin-bottom: 1rem;
+    width: 100%;
 }
 
 .p-txt {
@@ -403,6 +409,7 @@ header {
     font-family: 'Lato';
     font-weight: 400;
     margin-bottom: 5rem;
+    width: 100%;
 }
 
 .promobut{
@@ -463,7 +470,8 @@ header {
     background: url(./img/body/team/background.png) no-repeat;
 }
 
-.t-topic {
+.team-preview__h2 {
+    width: 100%;
     margin-bottom: 1rem;
     font-size: 32px;
     font-family: "Poppins";
@@ -471,7 +479,8 @@ header {
     color: white;
 }
 
-.t-txt {
+.team-preview__p {
+    width: 100%;
     margin-bottom: 5rem;
     font-size: 14px;
     font-family: 'Lato';
@@ -728,6 +737,22 @@ header {
     margin-right: 120px;
 }
 
+.contacts{
+    width: 200px;
+}
+
+.links{
+    width: 115px;
+}
+
+.open-hours{
+    width: 225px;
+}
+
+.location{
+    width: 270px;
+}
+
 .footer-topic{
     margin: 0;
     font-family: "Poppins";
@@ -840,10 +865,21 @@ header {
 
 .width-container{
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     position: relative;
     max-width: 1200px;
     margin-left:auto;
     margin-right:auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.about-setting{
+    flex-wrap: nowrap;
+}
+
+.mid-setting{
+    align-items: flex-start;
 }
