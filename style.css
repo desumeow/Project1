@@ -91,6 +91,13 @@ header {
     text-shadow:0 0 10px #8ea2dc
 }
 
+
+@media screen and (max-width: 999px) {
+   .menu {
+
+   }
+}
+
 .trial-button {
     width: auto;
     height: 40px;
@@ -773,4 +780,10 @@ header {
 
 .width-container--footer-info{
     align-items: flex-start;
+}
+
+@media screen and (max-width: 999px) {
+    body {
+        background: red;
+    }
 }
