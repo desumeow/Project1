@@ -626,20 +626,19 @@ header {
     color: #bbb;
 }
 
-.footer-info--marg{
-    margin-right: 120px;
-}
-
 .contacts{
     width: 200px;
+    margin-right: 120px;
 }
 
 .links{
     width: 115px;
+    margin-right: 120px;
 }
 
 .open-hours{
     width: 225px;
+    margin-right: 120px;
 }
 
 .location{
