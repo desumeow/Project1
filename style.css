@@ -219,6 +219,7 @@ header {
     width: 270px;
     height: 200px;
     background-size: cover;
+    background-position: center center;
     margin-bottom: 32px;
 }
 
