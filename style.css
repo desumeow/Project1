@@ -1,97 +1,3 @@
-p {
-    margin: 0;
-  }
-  
-  button {
-    cursor: pointer;
-    background: none;
-    padding: 0;
-    border: none;
-    color: currentColor;
-  }
-  
-  img {
-    height: auto;
-    max-width: 100%;
-    vertical-align: bottom;
-  }
-  
-  label {
-    cursor: pointer;
-    user-select: none;
-  }
-  
-  textarea {
-    resize: vertical;
-  }
-  
-  
-  input[placeholder] {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  
-  :focus::-webkit-input-placeholder {
-    color: transparent;
-  }
-  
-  :focus::-moz-placeholder {
-    color: transparent;
-  }
-  
-  :focus:-moz-placeholder {
-    color: transparent;
-  }
-  
-  :focus:-ms-input-placeholder {
-    color: transparent;
-  }
-  
-  button,
-  input,
-  optgroup,
-  select,
-  textarea {
-    box-shadow: none;
-  }
-  
-  input {
-    border: none;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-
-  *,
-*:before,
-*:after {
-  box-sizing: border-box;
-  outline: none!important;
-  margin: 0;
-  padding: 0;
-}
-/**/
-
-li{
-    list-style-type: none;
-}
-ul {
-    margin-left: 0; 
-    padding-left: 0;
-}
-
-h1, h2, h3 {
-    font-family: "Poppins";
-}
-
-p {
-    font-family: "Lato";
-}
-/**/
-
-
-
 html {
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -121,13 +27,10 @@ header {
     margin-bottom: 200px;
 }
 
-.background{
+.header__background{
     position: absolute;
     z-index: -1;
     pointer-events: none;
-}
-
-.woman{ 
     top: 0;
     left: 0;
 }
@@ -138,12 +41,12 @@ header {
     margin-bottom: 7%;
 }
 
-.banner-container{
+.banner{
     display: flex;
     justify-content: flex-end;
 }
 
-.banner {
+.banner__text-container {
     padding-right: 20rem;
     font-size: 4.5rem;
     font-family: "Poppins";
@@ -155,34 +58,35 @@ header {
     user-select: none;
 }
 
-.banner-second-line{
+.banner__p--second{
     text-indent: 20px;
 }
 
-.banner-third-line{
+.banner__p--third{
     text-indent: 40px;
 }
 
-.menu-box{
+.menu{
     display: flex;
     align-items: center;
     margin-left:auto
 }
 
-.menu-list {
+.menu__ul{
     display: flex;
     font-family: "Poppins";
+
 }
 
-.menu-button{
-    padding-right: 1.5rem;
+.menu__li{
+    padding-right: 20px;
 }
 
-.menu-link {
+.menu__a {
     color: #8ea2dc;
 }
 
-.menu-link:hover {
+.menu__a:hover {
     color: #4c77eb;
     text-shadow:0 0 10px #8ea2dc
 }
@@ -221,7 +125,7 @@ header {
     background-position: right 5rem;
 }
 
-.pros-card-li{
+.about-pros__li{
     margin-bottom: 3rem;
 }
 
@@ -235,14 +139,14 @@ header {
     flex-direction: column;
 }
 
-.reason-topic {
+.pros-card__h2 {
     margin-bottom: 1rem;
     font-size: 1.1rem;
     font-weight: 500;
     color: #000;
 }
 
-.icon{
+.pros-card__icon{
     align-self: center;
     margin-right: 30px;
 }
@@ -258,7 +162,7 @@ header {
     width: 50%;
 }
 
-.about-topic{
+.about-card__topic{
     margin-bottom: 3%;
     font-size: 48px;
     font-weight: 300;
@@ -266,9 +170,14 @@ header {
     
 }
 
-.about-text {
-    margin-bottom: 10%;
+.about-card__text {
+    margin-bottom: 50px;
 }
+
+.about-card__img{
+    overflow: hidden;
+}
+
 
 .classes{
     padding-bottom: 8rem;
@@ -280,7 +189,7 @@ header {
     padding-top: 6.5rem;
 }
 
-.classes-topic{
+.classes__h2{
     margin-bottom: 3rem;
     font-size: 3rem;
     font-weight: 300;
@@ -295,31 +204,18 @@ header {
 
 }
 
-.classes__list {
+.slider__ul {
     display: flex;
     flex-wrap: wrap;
     margin: -13px;
 }
 
-.classes__li {
+.class-card {
     padding: 13px;
     width: 25%;
 }
 
-
-.classes-pos {
-    display: flex;
-    flex-basis: 18.75rem;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-right: 30px;
-}
-
-.classes-pos:last-of-type{
-    margin-right: 0;
-}
-
-.classes-image-container{
+.class-card__image{
     width: 270px;
     height: 200px;
     background-size: cover;
@@ -331,7 +227,7 @@ header {
 
 }
 
-.class-name {
+.class-card__h3 {
     height: 53px;
     overflow: hidden;
     font-size: 18px;
@@ -340,12 +236,12 @@ header {
     margin-bottom: 0.875rem;
 }
 
-.class-info {
+.class-card__ul {
     list-style-type: none;
     margin-bottom: 1rem;
 }
 
-.info-li {
+.class-card__li {
     display: flex;
     margin-bottom: 0.5rem;
     font-size: 13px;
@@ -354,21 +250,21 @@ header {
     color: #999;
 }
 
-.info-li__icon{
+.class-card__icon{
     margin-right: 13px;
 }
 
-.info-li:last-child{
+.class-card__li:last-child{
     margin-bottom: 0;
 }
 
-.about-class {
+.class-card__p {
     font-size: 14px;
     font-weight: 400;
     color: #666;
 }
 
-.control{
+.slider_button{
     position: absolute;
     height: 30px;
     background: none;
@@ -378,12 +274,12 @@ header {
     color: #4c77eb;
 }
 
-.prev{
+.slider_button--prev{
     left: -3rem;
     top: 13.5rem;
 }
 
-.next{
+.slider_button--next{
     right: -3rem;
     top: 13.5rem;
 }
@@ -397,14 +293,14 @@ header {
     padding-bottom: 5rem;
 }
 
-.p-topic {
+.promo__h2 {
     font-size: 32px;
     font-weight: 300;
     margin-bottom: 1rem;
     width: 100%;
 }
 
-.p-txt {
+.promo__p {
     font-size: 14px;
     font-family: 'Lato';
     font-weight: 400;
@@ -412,7 +308,7 @@ header {
     width: 100%;
 }
 
-.promobut{
+.trial-button--promo-dec{
     padding-left: 3rem;
     padding-right: 3rem;
 }
@@ -488,7 +384,7 @@ header {
     color: white;
 }
 
-.meetot-box {
+.button-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -496,7 +392,7 @@ header {
 
 }
 
-.meetot{
+.button-box__p{
     font-family: "Poppins";
     color: white;
     font-size: 14px;
@@ -504,7 +400,7 @@ header {
     margin-bottom: 2rem;
 }
 
-.button-down {
+.button-box__button {
     width: 40px;
     height: 40px;
     background-image: url(./img/body/team/Ellipse\ 10.png);
@@ -529,7 +425,7 @@ header {
     margin: -15px;
 }
 
-.teammate {
+.team-card {
     width: 25%;
     display: flex;
     flex-wrap: wrap;
@@ -537,25 +433,25 @@ header {
 
 }
 
-.team-card-text{
+.team-card__text-box{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     padding-top: 0.5rem;
 }
 
-.photo {
+.team-card__photo {
     align-self: center;
     margin-right: 1rem;
 }
 
-.name {
+.team-card__name {
     font-family: "Poppins";
     font-size: 16px;
     font-weight: 600;
 }
 
-.job {
+.team-card__job {
     font-family: "Lato";
     font-size: 14px;
     font-weight: 400;
@@ -571,23 +467,18 @@ header {
     padding-bottom: 13.5rem;
 }
 
-.challenge-box{
-    display: flex;
-    align-items: flex-start;
-}
-
-.challenge-txt-content {
+.challenge-container {
     display: block;
 }
 
-.challenge-topic {
+.challenge__h2 {
     font-family: "Poppins";
     font-weight: 300;
     font-size: 48px;
     color: #7492ec;
 }
 
-.challenge-text {
+.challenge__p {
     width: 33%;
     font-size: 21px;
     line-height: 2rem;
@@ -595,7 +486,7 @@ header {
     margin-bottom: 2rem;
 }
 
-.womanimg {
+.challenge__img {
     position: absolute;
     right: 30.5rem;
     bottom: 0;
@@ -637,13 +528,13 @@ header {
     overflow: hidden;
 }
 
-.top {
+.subscription {
     background-color: #191919;
     display: flex;
     
 }
 
-.border{
+.subscription__border{
     padding-right: 210px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -653,24 +544,25 @@ header {
     border-bottom: none;
     border-left: none;
 }
-.top-right-box{
+
+.subscription__text-box{
     margin-right: 264px;
 }
 
-.top-right {
+.subscription__main {
     display: flex;
     align-items: center;
     padding-left: 45px;
 }
 
-.top-topic{
+.subscription__h2{
     font-size: 16px;
     color: white;
     font-weight: 600;
     font-family: "Poppins";
 }
 
-.top-text{
+.subscription__p{
     font-family: "Lato";
     font-style: italic;
     font-size: 13px;
@@ -678,12 +570,12 @@ header {
     font-weight: 500;
 }
 
-.subscription-wrap {
+.subscription-form {
     position: relative;
     padding-right: 67px;  
 }
 
-.email {
+.subscription-form__input {
     height: 3rem;
     width: 300px;
     border-top-left-radius: 30px;
@@ -698,14 +590,14 @@ header {
     font-weight: 400;
 }
 
-.email::placeholder{
+.subscription-form__input::placeholder{
     font-family: 'Lato';
     font-weight: 400;
     font-size: 13px;
     color: #bbbbbb;
 }
 
-.subscribe-button {
+.subscription-form__button {
     position: absolute;
     left: 14rem;
     height: 3rem;
@@ -721,7 +613,7 @@ header {
     font-size: 12px;
 }
 
-.mid {
+.footer-info {
     background-color: #222;
     display: flex;
     padding-top: 60px;
@@ -733,7 +625,7 @@ header {
     color: #bbb;
 }
 
-.mid-marg{
+.footer-info--marg{
     margin-right: 120px;
 }
 
@@ -753,7 +645,7 @@ header {
     width: 270px;
 }
 
-.footer-topic{
+.footer-h2{
     margin: 0;
     font-family: "Poppins";
     font-size: 14px;
@@ -763,57 +655,57 @@ header {
     color: #fff;
 }
 
-.footer-txt{
+.contacts__p{
     display: block;
     margin: 0;
     margin-bottom: 0.6rem;
 }
 
-.footer-link{
+.links_a{
     display: block;
     margin: 0;
     color: #bbb;
 }
 
-.footer-txt:first-of-type{
+.contacts__p:first-of-type{
     margin-bottom: 0;
 }
 
-.footer-txt:last-child{
+.contacts__p:last-child{
     margin-bottom: 0px;
 }
 
-.footer-text-box{
+.contacts__text-box{
     margin-bottom: 27px;
 }
 
-.social-container{
+.contacts__link-box{
     max-width: 200px;
 }
 
-.social-list{
+.contacts__ul{
     display: flex;
     flex-wrap: wrap;
     /* переделай сетку по кайфу, как везде */
 }
 
-.social-li{
+.contacts__li{
     width: 25%;
 }
 
-.social__card{
+.contacts__soc-logo{
     height: 100%;
     overflow: hidden;
 }
-.social-li__a{
+.contacts__a{
     display: block;
 }
 
-.trday{
+.open-hours__td-day{
     padding-right: 40px;
 }
 
-.trgts{
+.open-hours__td-gts{
     padding-right: 30px;
 }
 
@@ -821,21 +713,25 @@ header {
     border-radius: 10px;
 }
 
-.bot{
+.made-by{
     background-color: #191919;
 }
 
-.hearth{
+.footer-h2__hearth{
     color: #85AF4B;
 }
 
-.footer-menu-link{    
+.menu_ul--footer{
+    margin-right: -20px;
+}
+
+.menu__a--footer{    
     font-family: "Poppins";
     font-size: 12px;
     color: #bbb;
 }
 
-.footer-menu-link:hover{
+.menu__a--footer:hover{
     color: white;
     text-shadow:0 0 10px white;
 }
@@ -859,10 +755,6 @@ header {
     text-shadow: none!important;
 }
 
-.fmenu:last-child{
-    padding-right: 0;
-}
-
 .width-container{
     display: flex;
     flex-wrap: wrap;
@@ -876,10 +768,10 @@ header {
     padding-right: 15px;
 }
 
-.about-setting{
+.width-container--about{
     flex-wrap: nowrap;
 }
 
-.mid-setting{
+.width-container--footer-info{
     align-items: flex-start;
 }
