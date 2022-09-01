@@ -49,7 +49,7 @@ header {
 .page-header__text-container {
     padding-right: 20rem;
     font-size: 4.5rem;
-    font-family: "Poppins";
+    font-family: "Poppins" !important;
     font-weight: 300;
     color: #4c77eb;
     -moz-user-select: none;
@@ -119,7 +119,7 @@ header {
         display: block;
         position: fixed;
         z-index: 40;
-        right: 60px;
+        right: 30px;
         top: 25px;
     }
 
