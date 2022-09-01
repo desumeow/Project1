@@ -2,10 +2,12 @@
 <html>
  <head>
   <meta charset="utf-8">
+  
   <link rel="stylesheet" href="default.css">  
   <link rel="stylesheet" href="style.css">  
   <link rel="stylesheet" href="fonts.css">
   <link rel="shortcut icon" href="./img/favicon.ico">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>Wand Yoga</title>
   <script>
@@ -16,9 +18,37 @@
  </head>
  <body>
   <header class="page-header">
-    <img src="./img/header/headerimg.png" class="header__background">
-    <div class="header-menu">
-      <img src="./img/header/logo.png" alt="logo" class="header-menu__logo">
+    <div class="page-header__mobile-menu">
+      <p class="page-header__mobile-text">Menu</p>
+      <button class="page-header__mobile-button-close">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+ viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="20px" height="20px" fill="#fff"><g><g>
+  <polygon points="512,59.076 452.922,0 256,196.922 59.076,0 0,59.076 196.922,256 0,452.922 59.076,512 256,315.076 452.922,512 
+    512,452.922 315.076,256 		"/></g></svg>
+      </button>
+      <div class="menu">
+        <ul class="menu__ul">
+          <li class="menu__li"><a href="" class="menu__a">Home</a></li>
+          <li class="menu__li"><a href="" class="menu__a">About Us</a></li>
+          <li class="menu__li"><a href="" class="menu__a">Teacher</a></li>
+          <li class="menu__li"><a href="" class="menu__a">Pricing</a></li>
+          <li class="menu__li"><a href="" class="menu__a">Blog</a></li>
+          <li class="menu__li"><a href="" class="menu__a">Login</a></li>
+          <li class="menu__li"><a href="" class="menu__a">START YOUR FREE TRIAL</a></li>
+        </ul>
+      </div> 
+
+    </div>
+    <img src="./img/header/headerimg.png" class="page-header__background">
+    <div class="page-header__menu">
+      <img src="./img/header/logo.png" alt="logo" class="page-header__logo">
+      <button class="page-header__mobile-button">
+        <svg viewBox="0 0 100 80" width="40" height="40" fill="#4c77eb">
+          <rect width="100" height="20" rx="10"></rect>
+          <rect y="30" width="100" height="20" rx="10"></rect>
+          <rect y="60" width="100" height="20" rx="10"></rect>
+        </svg>
+      </button>
       <div class="menu">
         <ul class="menu__ul">
           <li class="menu__li"><a href="" class="menu__a">Home</a></li>
@@ -31,67 +61,67 @@
         <button class="trial-button highlight-white-txt">START YOUR FREE TRIAL</button>
       </div>
     </div>
-    <div class="banner">
-        <div class="banner__text-container">
-          <p class="banner__p banner__p--first">Be Happy</p>
-          <p class="banner__P banner__p--second">Be Healthy</p>
-          <p class="banner__P banner__p--third">Be Infinity</p>
+    <div class="page-header__banner">
+        <div class="page-header__text-container">
+          <p class="page-header__banner-p page-header__banner-p--first">Be Happy</p>
+          <p class="banner__P page-header__banner-p--second">Be Healthy</p>
+          <p class="banner__P page-header__banner-p--third">Be Infinity</p>
         </div>
     </div>
   </header>
     <main>
     <section class="about">
-        <div class="width-container width-container--about">
-          <div class="about-card">
-            <h1 class="about-card__topic">Everyone's Yoga</h1>
-            <p class="about-card__text">We offers over 4,000 professionally-filmed online yoga classes taught by experienced, certified yoga teachers to customers around the world. 
+        <div class="width-container width-container--nowrap">
+          <div class="about__card">
+            <h1 class="about__h1">Everyone's Yoga</h1>
+            <p class="about__text">We offers over 4,000 professionally-filmed online yoga classes taught by experienced, certified yoga teachers to customers around the world. 
               We belive that yoga should be accessible to everyone and our classes are designed to give you an in-studio experience, at an affordable price, in your own home.</p>
-            <div class="about-card__img"><img src="./img/body/about/shutterstock_324427688.png" alt=""></div>
+            <div class="about__img"><img src="./img/body/about/shutterstock_324427688.png" alt=""></div>
           </div>
-          <div class="about-pros">
-            <ul class="about-pros__ul">
-              <li class="about-pros__li">
-                <div class="pros-card">
-                  <img src="./img/body/about/017-yoga.png" class="pros-card__icon">
-                  <div class="pros-card__text-box">
-                    <h2 class="pros-card__h2">Balance Body & Mind</h2>
-                    <p class="pros-card__p">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standart.</p>
+          <div class="about__pros">
+            <ul class="about__list">
+              <li class="about__item">
+                <div class="about__pros-card">
+                  <img src="./img/body/about/017-yoga.png" class="about__icon">
+                  <div class="about__pros-text-box">
+                    <h2 class="about__pros-h2">Balance Body & Mind</h2>
+                    <p class="about__pros-p">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standart.</p>
                   </div>
                 </div>
               </li>
-              <li class="about-pros__li">
-                <div class="pros-card">
-                  <img src="./img/body/about/022-liposuction.png" class="pros-card__icon">
-                  <div class="pros-card__text-box">
-                    <h2 class="pros-card__h2">Weight Loss</h2>
-                    <p class="pros-card__p">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standart.</p>
+              <li class="about__item">
+                <div class="about__pros-card">
+                  <img src="./img/body/about/022-liposuction.png" class="about__icon">
+                  <div class="about__pros-text-box">
+                    <h2 class="about__pros-h2">Weight Loss</h2>
+                    <p class="about__pros-p">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standart.</p>
                   </div>
                 </div>
               </li>
-              <li class="about-pros__li">
-                <div class="pros-card">
-                  <img src="./img/body/about/om-1.png" class="pros-card__icon">
-                  <div class="pros-card__text-box">
-                    <h2 class="pros-card__h2">Meditation Practice</h2>
-                    <p class="pros-card__p">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standart.</p>
+              <li class="about__item">
+                <div class="about__pros-card">
+                  <img src="./img/body/about/om-1.png" class="about__icon">
+                  <div class="about__pros-text-box">
+                    <h2 class="about__pros-h2">Meditation Practice</h2>
+                    <p class="about__pros-p">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standart.</p>
                   </div>
                 </div>
               </li>
-              <li class="about-pros__li">
-                <div class="pros-card">
-                  <img src="./img/body/about/dove.png" class="pros-card__icon">
-                  <div class="pros-card__text-box">
-                    <h2 class="pros-card__h2">Yoga is a way to freedom</h2>
-                    <p class="pros-card__p">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standart.</p>
+              <li class="about__item">
+                <div class="about__pros-card">
+                  <img src="./img/body/about/dove.png" class="about__icon">
+                  <div class="about__pros-text-box">
+                    <h2 class="about__pros-h2">Yoga is a way to freedom</h2>
+                    <p class="about__pros-p">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standart.</p>
                   </div>
                 </div>
               </li>
-              <li class="about-pros__li">
-                <div class="pros-card">
-                  <img src="./img/body/about/energy.png" class="pros-card__icon">
-                  <div class="pros-card__text-box">
-                    <h2 class="pros-card__h2">Increased energy</h2>
-                    <p class="pros-card__p">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standart.</p>
+              <li class="about__item">
+                <div class="about__pros-card">
+                  <img src="./img/body/about/energy.png" class="about__icon">
+                  <div class="about__pros-text-box">
+                    <h2 class="about__pros-h2">Increased energy</h2>
+                    <p class="about__pros-p">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standart.</p>
                   </div>
                 </div>
               </li>
@@ -104,86 +134,86 @@
         <h2 class="classes__h2">Our Classes</h2>
         <div class="slider">
           <button class="slider_button slider_button--prev highlight-txt" onclick="buttonTest();">&#60;</button>
-          <ul class="slider__ul">
-            <li class="class-card">
-              <div class="class-card__image" style="background-image: url(./img/body/classes/img1.png);">
+          <ul class="slider__list">
+            <li class="slider__card">
+              <div class="slider__img" style="background-image: url(./img/body/classes/img1.png);">
               </div>
-              <h3 class="class-card__h3">Seated and Supine Poses for Beginners</h3>
-            <ul class="class-card__ul">
-              <li class="class-card__li">
-                <div class="class-card__icon"><img src="./img/body/classes/time.png" alt=""></div>
-                <div class="class-card__info">7:00am - 11:00am</div>
+              <h3 class="slider__h3">Seated and Supine Poses for Beginners</h3>
+            <ul class="slider__card-info">
+              <li class="slider__info-item">
+                <div class="slider__info-icon"><img src="./img/body/classes/time.png" alt=""></div>
+                <div class="slider__info-text">7:00am - 11:00am</div>
               </li>
-              <li class="class-card__li">
-                <div class="class-card__icon"><img src="./img/body/classes/teacher.png" alt=""></div>
-                <div class="class-card__info">Simon Park</div>
+              <li class="slider__info-item">
+                <div class="slider__info-icon"><img src="./img/body/classes/teacher.png" alt=""></div>
+                <div class="slider__info-text">Simon Park</div>
               </li>
-              <li class="class-card__li">
-                <div class="class-card__icon"><img src="./img/body/classes/lvl.png" alt=""></div>
-                <div class="class-card__info">Advanced</div>
+              <li class="slider__info-item">
+                <div class="slider__info-icon"><img src="./img/body/classes/lvl.png" alt=""></div>
+                <div class="slider__info-text">Advanced</div>
               </li>
             </ul>
-            <p class="class-card__p">Welcome to part 5 of our begginer series with Simon Park!</p>
+            <p class="slider__p">Welcome to part 5 of our begginer series with Simon Park!</p>
             </li>
-            <li class="class-card">
-              <div class="class-card__image" style="background-image: url(./img/body/classes/img2.png);">
+            <li class="slider__card">
+              <div class="slider__img" style="background-image: url(./img/body/classes/img2.png);">
               </div>
-              <h3 class="class-card__h3">Work toward Compass Pose</h3>
-              <ul class="class-card__ul">
-                <li class="class-card__li">
-                  <div class="class-card__icon"><img src="./img/body/classes/time.png" alt=""></div>
-                  <div class="class-card__info">7:00am - 11:00am</div>
+              <h3 class="slider__h3">Work toward Compass Pose</h3>
+              <ul class="slider__card-info">
+                <li class="slider__info-item">
+                  <div class="slider__info-icon"><img src="./img/body/classes/time.png" alt=""></div>
+                  <div class="slider__info-text">7:00am - 11:00am</div>
                 </li>
-                <li class="class-card__li">
-                  <div class="class-card__icon"><img src="./img/body/classes/teacher.png" alt=""></div>
-                  <div class="class-card__info">Simon Park</div>
+                <li class="slider__info-item">
+                  <div class="slider__info-icon"><img src="./img/body/classes/teacher.png" alt=""></div>
+                  <div class="slider__info-text">Simon Park</div>
                 </li>
-                <li class="class-card__li">
-                  <div class="class-card__icon"><img src="./img/body/classes/lvl.png" alt=""></div>
-                  <div class="class-card__info">Advanced</div>
+                <li class="slider__info-item">
+                  <div class="slider__info-icon"><img src="./img/body/classes/lvl.png" alt=""></div>
+                  <div class="slider__info-text">Advanced</div>
                 </li>
               </ul>
-              <p class="class-card__p">Stretch shoulders, hips, and hamstrings as you work towards Compass Pose (Parivrtta Surya Yantrasana).</p>
+              <p class="slider__p">Stretch shoulders, hips, and hamstrings as you work towards Compass Pose (Parivrtta Surya Yantrasana).</p>
             </li>
-            <li class="class-card">
-              <div class="class-card__image" style="background-image: url(./img/body/classes/img3.png);">
+            <li class="slider__card">
+              <div class="slider__img" style="background-image: url(./img/body/classes/img3.png);">
               </div>
-              <h3 class="class-card__h3">Handstand Variations and Transitions</h3>
-              <ul class="class-card__ul">
-                <li class="class-card__li">
-                  <div class="class-card__icon"><img src="./img/body/classes/time.png" alt=""></div>
-                  <div class="class-card__info">7:00am - 11:00am</div>
+              <h3 class="slider__h3">Handstand Variations and Transitions</h3>
+              <ul class="slider__card-info">
+                <li class="slider__info-item">
+                  <div class="slider__info-icon"><img src="./img/body/classes/time.png" alt=""></div>
+                  <div class="slider__info-text">7:00am - 11:00am</div>
                 </li>
-                <li class="class-card__li">
-                  <div class="class-card__icon"><img src="./img/body/classes/teacher.png" alt=""></div>
-                  <div class="class-card__info">Simon Park</div>
+                <li class="slider__info-item">
+                  <div class="slider__info-icon"><img src="./img/body/classes/teacher.png" alt=""></div>
+                  <div class="slider__info-text">Simon Park</div>
                 </li>
-                <li class="class-card__li">
-                  <div class="class-card__icon"><img src="./img/body/classes/lvl.png" alt=""></div>
-                  <div class="class-card__info">Advanced</div>
+                <li class="slider__info-item">
+                  <div class="slider__info-icon"><img src="./img/body/classes/lvl.png" alt=""></div>
+                  <div class="slider__info-text">Advanced</div>
                 </li>
               </ul>
-              <p class="class-card__p">Explore handstand variations and transitions in this advanced class. A brief warm up will prepare you to play with inversions!</p>
+              <p class="slider__p">Explore handstand variations and transitions in this advanced class. A brief warm up will prepare you to play with inversions!</p>
             </li>
-            <li class="class-card">
-              <div class="class-card__image" style="background-image: url(./img/body/classes/img4.png);">
+            <li class="slider__card">
+              <div class="slider__img" style="background-image: url(./img/body/classes/img4.png);">
               </div>
-              <h3 class="class-card__h3">Advanced Backbending</h3>
-              <ul class="class-card__ul">
-                <li class="class-card__li">
-                  <div class="class-card__icon"><img src="./img/body/classes/time.png" alt=""></div>
-                  <div class="class-card__info">7:00am - 11:00am</div>
+              <h3 class="slider__h3">Advanced Backbending</h3>
+              <ul class="slider__card-info">
+                <li class="slider__info-item">
+                  <div class="slider__info-icon"><img src="./img/body/classes/time.png" alt=""></div>
+                  <div class="slider__info-text">7:00am - 11:00am</div>
                 </li>
-                <li class="class-card__li">
-                  <div class="class-card__icon"><img src="./img/body/classes/teacher.png" alt=""></div>
-                  <div class="class-card__info">Simon Park</div>
+                <li class="slider__info-item">
+                  <div class="slider__info-icon"><img src="./img/body/classes/teacher.png" alt=""></div>
+                  <div class="slider__info-text">Simon Park</div>
                 </li>
-                <li class="class-card__li">
-                  <div class="class-card__icon"><img src="./img/body/classes/lvl.png" alt=""></div>
-                  <div class="class-card__info">Advanced</div>
+                <li class="slider__info-item">
+                  <div class="slider__info-icon"><img src="./img/body/classes/lvl.png" alt=""></div>
+                  <div class="slider__info-text">Advanced</div>
                 </li>
               </ul>
-              <p class="class-card__p">Amanda Botur has created a class to help you prepare for the hormonal shifts and rising emotions that may occur in the days...</p>
+              <p class="slider__p">Amanda Botur has created a class to help you prepare for the hormonal shifts and rising emotions that may occur in the days...</p>
             </li>
           </ul>
           <button class="slider_button slider_button--next   highlight-txt inactive" onclick="buttonTest();">&gt;</button> 
@@ -195,7 +225,7 @@
         <h2 class="promo__h2">Tap into your inner fountain of youth.</h2>
         <p class="promo__p">Acces hundreds of yoga classes shot in natural studios around the world.</br>
           Unlimited acess for $15/month.</p>
-        <button class="trial-button highlight-white-txt trial-button--promo-dec">START YOUR 14-DAYFREE TRIAL</button>
+        <button class="trial-button highlight-white-txt trial-button--padding">START YOUR 14-DAYFREE TRIAL</button>
       </div>
     </section>
     <section class="gallery">
@@ -220,105 +250,105 @@
       </div>
     </section>
     <section class="team-preview">
-      <div class="width-container">
+      <div class="width-container width-container--block">
         <h2 class="team-preview__h2">The Most Experienced Yoga Instructors</h2>
         <p class="team-preview__p">
         Our mission is to bring the communities of Brookhaven, Dunwoody, Old Fourth Ward, and</br>
         Buckhead a knowledgeable, welcoming, and comfortable place to practice yoga and to</br>
         enhance your well-being and general approach to holistic health.
         </p>
-        <div class="button-box">
-        <p class="button-box__p">Meet Our Teacher</p>
-        <button class="button-box__button " type="button" onclick="buttonTest();"></button>
-        </div>
+        <p class="team-preview__button-text">Meet Our Teacher</p>
+        <button class="team-preview__button" type="button" onclick="buttonTest();"></button>
       </div>
     </section>
     <section class="team">
-      <div class="team-table">
-          <div class="team-card">
-            <img src="./img/body/team/Layer 1.png" alt="Becky Photo" class="team-card__photo">
-            <div class="team-card__text-box">
-              <p class="team-card__name">Becky Nickerson</p>
-              <p class="team-card__job">Owner/Lead Instructor</p>
+      <div class="team__container">
+        <ul class="team__list">
+          <li class="team__card">
+            <img src="./img/body/team/Layer 1.png" alt="Becky Photo" class="team__photo">
+            <div class="team__text-box">
+              <p class="team__name">Becky Nickerson</p>
+              <p class="team__job">Owner/Lead Instructor</p>
             </div>
-          </div>
-          <div class="team-card">
-            <img src="./img/body/team/Layer 2.png" alt="Taylor Photo" class="team-card__photo">
-            <div class="team-card__text-box">
-              <p class="team-card__name">Taylor Harkness</p>
-              <p class="team-card__job">Owner/Lead Instructor</p>
+          </li>
+          <li class="team__card">
+            <img src="./img/body/team/Layer 2.png" alt="Taylor Photo" class="team__photo">
+            <div class="team__text-box">
+              <p class="team__name">Taylor Harkness</p>
+              <p class="team__job">Owner/Lead Instructor</p>
             </div>
-          </div>
-          <div class="team-card">
-            <img src="./img/body/team/Layer 3.png" alt="Natalie Photo" class="team-card__photo">
-            <div class="team-card__text-box">
-              <p class="team-card__name">Natalie Skubic</p>
-              <p class="team-card__job">Instructor</p>
+          </li>
+          <li class="team__card">
+            <img src="./img/body/team/Layer 3.png" alt="Natalie Photo" class="team__photo">
+            <div class="team__text-box">
+              <p class="team__name">Natalie Skubic</p>
+              <p class="team__job">Instructor</p>
             </div>
-          </div>
-          <div class="team-card">
-            <img src="./img/body/team/Layer 4.png" alt="Meredith Photo" class="team-card__photo">
-            <div class="team-card__text-box">
-              <p class="team-card__name">Meredith Hesse</p>
-              <p class="team-card__job">Instructor</p>
+          </li>
+          <li class="team__card">
+            <img src="./img/body/team/Layer 4.png" alt="Meredith Photo" class="team__photo">
+            <div class="team__text-box">
+              <p class="team__name">Meredith Hesse</p>
+              <p class="team__job">Instructor</p>
             </div>
-          </div>
-          <div class="team-card">
-            <img src="./img/body/team/Layer 5.png" alt="Jeff Photo" class="team-card__photo">
-            <div class="team-card__text-box">
-              <p class="team-card__name">Jeff Sousa</p>
-              <p class="team-card__job">Instructor</p>
+          </li>
+          <li class="team__card">
+            <img src="./img/body/team/Layer 5.png" alt="Jeff Photo" class="team__photo">
+            <div class="team__text-box">
+              <p class="team__name">Jeff Sousa</p>
+              <p class="team__job">Instructor</p>
             </div>
-          </div>
-          <div class="team-card">
-            <img src="./img/body/team/Layer 6.png" alt="Ashley Photo" class="team-card__photo">
-            <div class="team-card__text-box">
-              <p class="team-card__name">Ashley Lorenzo</p>
-              <p class="team-card__job">Instructor</p>
+          </li>
+          <li class="team__card">
+            <img src="./img/body/team/Layer 6.png" alt="Ashley Photo" class="team__photo">
+            <div class="team__text-box">
+              <p class="team__name">Ashley Lorenzo</p>
+              <p class="team__job">Instructor</p>
             </div>
-          </div>
-          <div class="team-card">
-            <img src="./img/body/team/Layer 7.png" alt="Jessica Photo" class="team-card__photo">
-            <div class="team-card__text-box">
-              <p class="team-card__name">Jessica Calderon</p>
-              <p class="team-card__job">Instructor</p>
+          </li>
+          <li class="team__card">
+            <img src="./img/body/team/Layer 7.png" alt="Jessica Photo" class="team__photo">
+            <div class="team__text-box">
+              <p class="team__name">Jessica Calderon</p>
+              <p class="team__job">Instructor</p>
             </div>
-          </div>
-          <div class="team-card">
-            <img src="./img/body/team/Layer 8.png" alt="Doug Photo" class="team-card__photo">
-            <div class="team-card__text-box">
-              <p class="team-card__name">Doug Johnson</p>
-              <p class="team-card__job">Instructor</p>
+          </li>
+          <li class="team__card">
+            <img src="./img/body/team/Layer 8.png" alt="Doug Photo" class="team__photo">
+            <div class="team__text-box">
+              <p class="team__name">Doug Johnson</p>
+              <p class="team__job">Instructor</p>
             </div>
-          </div>
-          <div class="team-card">
-            <img src="./img/body/team/Layer 9.png" alt="Sharon Photo" class="team-card__photo">
-            <div class="team-card__text-box">
-              <p class="team-card__name">Sharon Caplan</p>
-              <p class="team-card__job">Instructor</p>
+          </li>
+          <li class="team__card">
+            <img src="./img/body/team/Layer 9.png" alt="Sharon Photo" class="team__photo">
+            <div class="team__text-box">
+              <p class="team__name">Sharon Caplan</p>
+              <p class="team__job">Instructor</p>
             </div>
-          </div>
-          <div class="team-card">
-            <img src="./img/body/team/Layer 10.png" alt="Erin Photo" class="team-card__photo">
-            <div class="team-card__text-box">
-              <p class="team-card__name">Erin Rogers</p>
-              <p class="team-card__job">Instructor</p>
+          </li>
+          <li class="team__card">
+            <img src="./img/body/team/Layer 10.png" alt="Erin Photo" class="team__photo">
+            <div class="team__text-box">
+              <p class="team__name">Erin Rogers</p>
+              <p class="team__job">Instructor</p>
             </div>
-          </div>
-          <div class="team-card">
-            <img src="./img/body/team/Layer 11.png" alt="Jessica Photo" class="team-card__photo">
-            <div class="team-card__text-box">
-              <p class="team-card__name">Jessica Taylor</p>
-              <p class="team-card__job">Instructor</p>
+          </li>
+          <li class="team__card">
+            <img src="./img/body/team/Layer 11.png" alt="Jessica Photo" class="team__photo">
+            <div class="team__text-box">
+              <p class="team__name">Jessica Taylor</p>
+              <p class="team__job">Instructor</p>
             </div>
-          </div>
-          <div class="team-card">
-            <img src="./img/body/team/Layer 12.png" alt="Todd Photo" class="team-card__photo">
-            <div class="team-card__text-box">
-              <p class="team-card__name">Todd Delaune</p>
-              <p class="team-card__job">Instructor</p>
+          </li>
+          <li class="team__card">
+            <img src="./img/body/team/Layer 12.png" alt="Todd Photo" class="team__photo">
+            <div class="team__text-box">
+              <p class="team__name">Todd Delaune</p>
+              <p class="team__job">Instructor</p>
             </div>
-          </div>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="challenge">
@@ -366,15 +396,15 @@
     </section>
     </main>
     <footer>
-      <section class="subscription">
+      <div class="footer__subscription">
       <div class="width-container">
-        <div class="subscription__border">
-        <img src="./img/footer/Vector Smart Object copy.png" alt="logo" class="subscription__logo">
+        <div class="footer__border">
+        <img src="./img/footer/Vector Smart Object copy.png" alt="logo" class="footer__logo">
         </div>
-        <div class="subscription__main">
-          <div class="subscription__text-box"> 
-            <h2 class="subscription__h2">SUBSCRIBE</h2>
-            <p class="subscription__p">To recieve the latest freebies in your inbox</p>
+        <div class="footer__subscription-main">
+          <div class="footer__subscribe-box"> 
+            <h2 class="footer__subscribe-h2">SUBSCRIBE</h2>
+            <p class="footer__subscribe-p">To recieve the latest freebies in your inbox</p>
           </div>
           <form class="subscription-form" action="">
             <input placeholder="Your Address Email" type="text" class="subscription-form__input">
@@ -382,87 +412,87 @@
           </form>
         </div>
       </div> 
-      </section>
-      <section class="footer-info">
-        <div class="width-container width-container--footer-info">
-        <div class="contacts">
-          <h2 class="footer-h2">Contact Us</h2>
-          <div class="contacts__text-box">
-          <p class="contacts__p">PO Box 16122 Collins Street West,</p>
-          <p class="contacts__p ">Victoria 8007 Australia</p>
-          <p class="contacts__p ">Alistudios@gmail.com</p>
-          <p class="contacts__p">+61 3 8376 6284</p>
+    </div>
+      <div class="footer__info">
+        <div class="width-container width-container--flex-start">
+        <div class="footer__contacts">
+          <h2 class="footer__h2">Contact Us</h2>
+          <div class="footer__contacts-box">
+          <p class="footer__contacts-text">PO Box 16122 Collins Street West,</p>
+          <p class="footer__contacts-text ">Victoria 8007 Australia</p>
+          <p class="footer__contacts-text ">Alistudios@gmail.com</p>
+          <p class="footer__contacts-text">+61 3 8376 6284</p>
         </div>
-        <div class="contacts__link-box">
-          <ul class="contacts__ul">
-            <li class="contacts__li"><a href="" class="contacts__a"><div class="contacts__soc-logo"><img src="./img/footer/facebook.png" alt="facebook"></div></a></li>
-            <li class="contacts__li"><a href="" class="contacts__a"><div class="contacts__soc-logo"><img src="./img/footer/twitter.png" alt="twitter"></div></a></li>
-            <li class="contacts__li"><a href="" class="contacts__a"><div class="contacts__soc-logo"><img src="./img/footer/google+.png" alt="google+"></div></a></li>
-            <li class="contacts__li"><a href="" class="contacts__a"><div class="contacts__soc-logo"><img src="./img/footer/Pintrest.png" alt="Pintrest"></div></a></li>
+        <div class="footer__soc-link-box">
+          <ul class="footer__soc-list">
+            <li class="footer__soc-item"><a href="" class="footer__soc-link"><div class="footer__soc-logo"><img src="./img/footer/facebook.png" alt="facebook"></div></a></li>
+            <li class="footer__soc-item"><a href="" class="footer__soc-link"><div class="footer__soc-logo"><img src="./img/footer/twitter.png" alt="twitter"></div></a></li>
+            <li class="footer__soc-item"><a href="" class="footer__soc-link"><div class="footer__soc-logo"><img src="./img/footer/google+.png" alt="google+"></div></a></li>
+            <li class="footer__soc-item"><a href="" class="footer__soc-link"><div class="footer__soc-logo"><img src="./img/footer/Pintrest.png" alt="Pintrest"></div></a></li>
           </ul>
         </div>
         </div>
-        <div class="links">
-          <h2 class="footer-h2">Useful Links</h2>
-          <a href="" class="links_a">About Us</a>
-          <a href="" class="links_a">Advertise</a> 
-          <a href="" class="links_a">Terms & Conditions</a> 
-          <a href="" class="links_a">Privacy Policy</a> 
-          <a href="" class="links_a">Careers</a> 
-          <a href="" class="links_a">Shop</a>
+        <div class="footer__nav">
+          <h2 class="footer__h2">Useful Links</h2>
+          <a href="" class="footer__nav-link">About Us</a>
+          <a href="" class="footer__nav-link">Advertise</a> 
+          <a href="" class="footer__nav-link">Terms & Conditions</a> 
+          <a href="" class="footer__nav-link">Privacy Policy</a> 
+          <a href="" class="footer__nav-link">Careers</a> 
+          <a href="" class="footer__nav-link">Shop</a>
         </div>
-        <div class="open-hours">
-          <h2 class="footer-h2">Open Hours</h2>
-          <table class="open-hours__table">
+        <div class="footer__open-hours">
+          <h2 class="footer__h2">Open Hours</h2>
+          <table class="footer__table">
             <tbody>
               <tr>
-                <td class="open-hours__td-day">Monday</td>
-                <td class="open-hours__td-gts">></td>
-                <td class="open-hours__td-time">11am-2pm
+                <td class="footer__td-day">Monday</td>
+                <td class="footer__td-gts">></td>
+                <td class="footer__td-time">11am-2pm
           </td>
               </tr>
               <tr>
-                <td class="open-hours__td-day">Tuesday</td>
-                <td class="open-hours__td-gts">></td>
-                <td class="open-hours__td-time">8am-10pm</td>
+                <td class="footer__td-day">Tuesday</td>
+                <td class="footer__td-gts">></td>
+                <td class="footer__td-time">8am-10pm</td>
               </tr>
               <tr>
-                <td class="open-hours__td-day">Wednesday</td>
-                <td class="open-hours__td-gts">></td>
-                <td class="open-hours__td-time">11am-12pm</td>
+                <td class="footer__td-day">Wednesday</td>
+                <td class="footer__td-gts">></td>
+                <td class="footer__td-time">11am-12pm</td>
               </tr>
               <tr>
-                <td class="open-hours__td-day">Thursday</td>
-                <td class="open-hours__td-gts">></td>
-                <td class="open-hours__td-time">11am-12pm</td>
+                <td class="footer__td-day">Thursday</td>
+                <td class="footer__td-gts">></td>
+                <td class="footer__td-time">11am-12pm</td>
               </tr>
               <tr>
-                <td class="open-hours__td-day">Friday</td>
-                <td class="open-hours__td-gts">></td>
-                <td class="open-hours__td-time">10am-2pm</td>
+                <td class="footer__td-day">Friday</td>
+                <td class="footer__td-gts">></td>
+                <td class="footer__td-time">10am-2pm</td>
               </tr>
               <tr>
-                <td class="open-hours__td-day">Saturday</td>
-                <td class="open-hours__td-gts">></td>
-                <td class="open-hours__td-time">10am-2pm</td>
+                <td class="footer__td-day">Saturday</td>
+                <td class="footer__td-gts">></td>
+                <td class="footer__td-time">10am-2pm</td>
               </tr>
               <tr>
-                <td class="open-hours__td-day">Sunday</td>
-                <td class="open-hours__td-gts">></td>
-                <td class="open-hours__td-time">Close</td>
+                <td class="footer__td-day">Sunday</td>
+                <td class="footer__td-gts">></td>
+                <td class="footer__td-time">Close</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <div class="location">
-          <h2 class="footer-h2">Our Location</h2>
+        <div class="footer__location">
+          <h2 class="footer__h2">Our Location</h2>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3537.658089359852!2d144.94480060738994!3d-37.820609070207674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5a3ff30273%3A0x55700729bcaebb85!2zMTYxMjIgQ29sbGlucyBTdCwgV2VzdCBNZWxib3VybmUgVklDIDMwMDgsINCQ0LLRgdGC0YDQsNC70LjRjw!5e0!3m2!1sru!2sru!4v1660985679168!5m2!1sru!2sru" width="270" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="google-map"></iframe>
         </div>
       </div>
-      </section>
-      <section class="made-by">
-        <div class="width-container">
-        <p class="footer-h2">BUILT WITH &nbsp;<span class="footer-h2__hearth">&#10084;</span>&nbsp; WP THEME BY ALITSTUDIO</p>
+    </div>
+      <div class="footer__made-by">
+        <div class="width-container"> 
+        <p class="footer__h2">BUILT WITH &nbsp;<span class="footer__hearth">&#10084;</span>&nbsp; WP THEME BY ALITSTUDIO</p>
         <div class="menu">
           <ul class="menu__ul menu_ul--footer">
             <li class="menu__li"><a href="" class="menu__a menu__a--footer">HOME</a></li>
@@ -475,7 +505,8 @@
           </ul>
         </div>
         </div>
-      </section>
+      </div>
     </footer>
+    <script src="script.js"></script> 
  </body>
 </html>
