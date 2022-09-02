@@ -9,6 +9,18 @@ html::-webkit-scrollbar {
     display: none;
 }
 
+.width-container--nowrap{
+    flex-wrap: nowrap;
+}
+
+.width-container--flex-start{
+    align-items: flex-start;
+}
+
+.width-container--block{
+    display: block;
+}
+
 a{
     text-decoration: none;
     font-weight: 700;
@@ -111,6 +123,12 @@ header {
         padding-right: 100px;
     }
     
+}
+
+@media screen and (max-width: 992px) {
+    .page-header{
+        margin-bottom: 120px;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -369,12 +387,53 @@ header {
     overflow: hidden;
 }
 
+@media screen and (max-width: 1400px) {
+    .about{
+         background-size: contain;
+         background-position-y: -10px;
+    }
+
+    .about__card{ padding-top: 0;}
+
+    .about__pros{padding-top: 0;}
+}
+
+@media screen and (max-width: 992px) {
+    .about{
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about{
+        padding-top: 50px;
+        background-position-y: 15px;
+    }
+    .about__h1{
+        font-size: 26px;
+        font-weight: bolder;
+    }
+    .about__card{
+        margin-right: 10px;
+    }
+    
+    .about__item{
+        margin-bottom: 10px;
+    }
+
+    .about__icon{
+        margin-right: 10px;
+        height: 50px;
+    }
+}
 
 .classes{
-    padding-bottom: 8rem;
     background: url(./img/body/classes/classes_background.png);
     background-repeat: no-repeat;
     background-size: auto auto;
+    background-position-x: center;
+
+    padding-bottom: 8rem;
     padding-left: 5rem;
     padding-right: 5rem;
     padding-top: 6.5rem;
@@ -392,6 +451,23 @@ header {
     display: flex;
     justify-content: center;
     align-content: center;
+
+}
+
+@media screen and (max-width: 992px) {
+    .classes{
+        padding-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .classes{
+        padding-bottom: 1rem;
+    }
+    
+    .classes__h2{
+        margin-bottom: 1rem;
+    }
 
 }
 
@@ -471,6 +547,36 @@ header {
     top: 13.5rem;
 }
 
+@media screen and (max-width: 992px) {
+    .slider__img{
+        width: 200px;
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .slider__list{
+        margin: -5px;
+    }
+    .slider__card{
+        padding: 5px;
+    }
+    .slider__img{
+        width: 90px;
+        height: 90px;
+        margin-bottom: 5px;
+    }
+    .slider__h3{
+        font-size: 14px;
+        height: 90px;
+        overflow: visible;
+    }
+
+    .slider__info-icon{
+        margin-right: 5px;
+    }
+};
+
 .promo {
     margin: 0;
     padding: 0;
@@ -493,6 +599,20 @@ header {
     font-weight: 400;
     margin-bottom: 5rem;
     width: 100%;
+}
+
+@media screen and (max-width:576px) {
+    .promo{
+        padding: 15px;
+    }
+
+    .promo__h2 {
+        font-size: 24px;
+    }
+
+    .promo__p{
+        margin-bottom: 1rem;
+    }
 }
 
 .trial-button--padding{
@@ -539,6 +659,12 @@ header {
     overflow: hidden;
 }
 
+@media screen and (max-width: 576px) {
+    .gallery{
+        padding-bottom: 60px;
+    }
+}
+
 .team {
     margin: 0;
     padding: 0;
@@ -571,13 +697,6 @@ header {
     color: white;
 }
 
-.button-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-}
 
 .team-preview__button-text{
     font-family: "Poppins";
@@ -594,6 +713,13 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     border: none;
+}
+
+@media screen and (max-width: 576px) {
+    .team-preview{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 }
 
 .team{
@@ -645,6 +771,44 @@ header {
     color: grey;
 }
 
+@media screen and (max-width: 992px) {
+    .team__list{
+        margin: 0;
+        margin-bottom: -15px;
+    }
+    .team__card{
+        padding: 0;
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .team{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .team__card{
+    }
+
+    .team__photo{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .team__text-box{
+        padding-top: 0;
+    }
+
+    .team__name{
+        font-size: 14px;
+    }
+
+    .team__job{
+        font-size: 12px;
+    }
+}
+
 .challenge {
     position: relative;
     z-index: 1;
@@ -683,6 +847,34 @@ header {
     user-select: none;
 }
 
+@media screen and (max-width:1400px) {
+    .challenge{
+        padding-left: 21rem;
+        padding-top: 12rem;
+    }
+
+    .challenge__img{
+        right: 15rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .challenge{
+        padding-left: 11rem;
+        padding-top: 10rem;
+    }
+
+    .challenge__img{
+        right: 5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .challenge{
+        display: none;
+    }
+}
+
 .logotypes {
     display: flex;
     flex-wrap: wrap;
@@ -713,6 +905,22 @@ header {
 .logotypes__card{
     height: 100%;
     overflow: hidden;
+}
+
+@media screen and (max-width: 992px) {
+    .logotypes__list{
+        margin: -20px;
+    }
+    .logotypes__li{
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .logotypes{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 
 .footer__subscription {
@@ -798,6 +1006,18 @@ header {
     color: white;
     font-weight: 600;
     font-size: 12px;
+}
+
+@media screen and (max-width: 576px){
+    .subscription-form{
+        padding-right: 80px;
+    }
+    .subscription-form__input{
+        width: 200px;
+    }
+    .subscription-form__button{
+        left: 8.5rem;
+    }
 }
 
 .footer__info {
@@ -905,6 +1125,59 @@ header {
 
 .footer__hearth{
     color: #85AF4B;
+}
+
+@media screen and (max-width:992px) {
+    .footer__border{
+        padding-right: 10px;
+    }
+
+    .footer__subscription-main{
+        padding-left: 10px;
+    }
+
+    .footer__subscribe-box{
+        margin-right: 150px;
+    }
+
+    .footer__contacts{
+        margin-right: 25px;
+    }
+
+    .footer__nav{
+        margin-right: 25px;
+    }
+
+    .footer__open-hours{
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer__subscription{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .footer__border{
+        padding: 0px;
+        padding-bottom: 10px;
+        border: none;
+    }
+    .footer__subscription-main{
+        padding: 0;
+    }
+    .footer__subscribe-box{
+        margin-right: 10px;
+    }
+
+    .footer__info{
+        padding-top: 20px;
+    }
+
+
+    .width-container--flex-start{
+        justify-content: left !important;
+    }
 }
 
 .menu_ul--footer{
