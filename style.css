@@ -109,7 +109,7 @@ header {
     display: none;
 }
 
-@media screen and (max-width:1350px) {
+@media screen and (max-width:1400px) {
 
     .page-header{
         padding: 10px;
@@ -129,9 +129,17 @@ header {
     .page-header{
         margin-bottom: 120px;
     }
+
+    .page-header__menu{
+        font-size: 14px;
+    }
+
+    .page-header__text-container{
+        font-size: 3rem;
+    }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
 
     .page-header__mobile-button{
         display: block;
@@ -186,7 +194,7 @@ header {
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 576px) {
 
     .page-header{
         margin: 10px;
@@ -271,7 +279,7 @@ header {
     font-size: 	0.75rem;
 }
 
-@media screen and (max-width:1350px) {
+@media screen and (max-width:1400px) {
 
     .menu__li{
         padding-right: 10px;
@@ -279,7 +287,7 @@ header {
     
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
     
     .menu{
         display: none;
@@ -389,24 +397,49 @@ header {
 
 @media screen and (max-width: 1400px) {
     .about{
-         background-size: contain;
-         background-position-y: -10px;
+        background: none;
     }
 
-    .about__card{ padding-top: 0;}
+    .about__card{ padding-top: 160px;}
 
-    .about__pros{padding-top: 0;}
+    .about__pros{padding-top: 50px;}
 }
 
 @media screen and (max-width: 992px) {
     .about{
         padding-bottom: 20px;
     }
+
+    .about__card{ 
+        width: 90%;
+        padding-top: 170px;
+        margin-right: 0;
+    }
+
+    .about__pros{
+        width: 90%;
+        padding-top: 50px;
+    }
+
+    .about__list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about__item{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about__item{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 576px) {
     .about{
-        padding-top: 50px;
+        padding-top: 0px;
         background-position-y: 15px;
     }
     .about__h1{
@@ -414,7 +447,7 @@ header {
         font-weight: bolder;
     }
     .about__card{
-        margin-right: 10px;
+        padding-top: 0;
     }
     
     .about__item{
@@ -454,9 +487,28 @@ header {
 
 }
 
+@media screen and (max-width: 1400px){
+    .classes{
+        padding-bottom: 4rem;
+    }
+
+    .classes__h2{
+        font-size: 34px;
+        margin-bottom: 1rem;
+    }
+}   
+
 @media screen and (max-width: 992px) {
     .classes{
         padding-bottom: 4rem;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .classes{
+        background: #F1F3F7;
+        padding-top: 24px;
     }
 }
 
@@ -468,7 +520,6 @@ header {
     .classes__h2{
         margin-bottom: 1rem;
     }
-
 }
 
 .slider__list {
@@ -477,7 +528,7 @@ header {
     margin: -13px;
 }
 
-.slider__card {
+.slider__li {
     padding: 13px;
     width: 25%;
 }
@@ -547,43 +598,58 @@ header {
     top: 13.5rem;
 }
 
-@media screen and (max-width: 992px) {
+/*1254px*/
+@media screen and (max-width: 1400px) {
     .slider__img{
         width: 200px;
         height: 130px;
     }
+
+    .slider_button{
+        top: 10.5rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .slider__img{
+        width: 150px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .slider_button{
+        top: 9rem;
+    }
+
+    .slider__h3{
+        font-size: 16px;
+    }
+    
+    .slider__info-text{
+        font-size: 12px;
+    }
+
+    .slider__p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider__li{
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 576px) {
-    .slider__list{
-        margin: -5px;
-    }
-    .slider__card{
-        padding: 5px;
-    }
-    .slider__img{
-        width: 90px;
-        height: 90px;
-        margin-bottom: 5px;
-    }
-    .slider__h3{
-        font-size: 14px;
-        height: 90px;
-        overflow: visible;
-    }
 
-    .slider__info-icon{
-        margin-right: 5px;
-    }
-};
+}
 
-.promo {
-    margin: 0;
-    padding: 0;
+.promo{
     display: block;
     text-align: center;
-    padding-top: 10rem;
-    padding-bottom: 5rem;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .promo__h2 {
@@ -591,6 +657,7 @@ header {
     font-weight: 300;
     margin-bottom: 1rem;
     width: 100%;
+    text-align: center;
 }
 
 .promo__p {
@@ -599,6 +666,7 @@ header {
     font-weight: 400;
     margin-bottom: 5rem;
     width: 100%;
+    text-align: center;
 }
 
 @media screen and (max-width:576px) {
@@ -786,9 +854,6 @@ header {
     .team{
         padding-top: 30px;
         padding-bottom: 30px;
-    }
-
-    .team__card{
     }
 
     .team__photo{
@@ -1174,10 +1239,6 @@ header {
         padding-top: 20px;
     }
 
-
-    .width-container--flex-start{
-        justify-content: left !important;
-    }
 }
 
 .menu_ul--footer{
@@ -1236,4 +1297,18 @@ header {
 
 .width-container--block{
     display: block;
+}
+
+
+@media screen and (max-width: 992px) {
+    .width-container--nowrap{
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .width-container--flex-start{
+    justify-content: left;
+    }
 }
