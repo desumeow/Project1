@@ -140,13 +140,22 @@ header {
 }
 
 @media screen and (max-width: 768px) {
+    
+    .page-header__menu{
+        position: fixed;
+        z-index: 100;
+        background-color: rgba(226, 230, 238, 0.5);
+        width: 100%;
+        margin: -10px;
+        overflow: hidden;
+    }
 
     .page-header__mobile-button{
         display: block;
         position: fixed;
         z-index: 40;
         right: 30px;
-        top: 25px;
+        top: 11px;
     }
 
     .page-header__mobile-button:hover{
@@ -197,24 +206,23 @@ header {
 @media screen and (max-width: 576px) {
 
     .page-header{
-        margin: 10px;
-        padding: 5px;
-    }
-
-    .page-header__menu{
-        margin-bottom: 0px;
+        margin-bottom: 50px;
     }
 
     .page-header__background{
         display: none;
     }
 
+    .page-header__logo{
+        padding-left: 15px;
+    }
+
     .page-header__mobile-button{
         display: block;
         position: fixed;
         z-index: 40;
-        right: 10px;
-        top: 25px;
+        right: 15px;
+        top: 10px;
     }
 
     .page-header__mobile-button:hover{
@@ -228,7 +236,7 @@ header {
         flex-direction: column;
         position: fixed;
         overflow: hidden;
-        z-index: 50;
+        z-index: 110;
         top: 0px;
         right: 0px;
 
@@ -342,8 +350,12 @@ header {
     background-position: right 5rem;
 }
 
+.about__list{
+    margin: -15px;
+}
+
 .about__item{
-    margin-bottom: 3rem;
+    padding:  15px;
 }
 
 .about__pros-card{
@@ -410,14 +422,19 @@ header {
         padding-bottom: 20px;
     }
 
+    .about__img {
+        display: flex;
+        justify-content: center;
+    }
+
     .about__card{ 
-        width: 90%;
+        width: 100%;
         padding-top: 170px;
         margin-right: 0;
     }
 
     .about__pros{
-        width: 90%;
+        width: 100%;
         padding-top: 50px;
     }
 
@@ -432,8 +449,18 @@ header {
 }
 
 @media screen and (max-width: 768px) {
+
+    .about__pros-h2{
+        margin-bottom: 0.2rem;
+    }
+
+    .about__list{
+        margin: -10px;
+    }
+
     .about__item{
         width: 100%;
+        padding: 10px;
     }
 }
 
@@ -446,17 +473,30 @@ header {
         font-size: 26px;
         font-weight: bolder;
     }
+
+    .about__text{
+        margin-bottom: 15px;
+    }
+
     .about__card{
         padding-top: 0;
     }
-    
-    .about__item{
-        margin-bottom: 10px;
+
+    .about__pros{
+        padding-top: 15px;
     }
 
     .about__icon{
         margin-right: 10px;
         height: 50px;
+    }
+
+    .about__pros-h2{
+        font-size: 16px;
+    }
+
+    .about__pros-p{
+        font-size: 12px;
     }
 }
 
@@ -519,6 +559,8 @@ header {
     
     .classes__h2{
         margin-bottom: 1rem;
+        font-size: 20px;
+        font-weight: 600;
     }
 }
 
@@ -642,7 +684,33 @@ header {
 }
 
 @media screen and (max-width: 576px) {
+    .slider__li{
+        width: 100%;
+    }
 
+    .slider__li:nth-child(1n+2){
+        display: none;
+    }
+
+    .slider__img{
+        width: 200px;
+        height: 130px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slider__h3{
+        height: auto;
+        margin-bottom: 0.5rem;
+    }
+
+    .slider__card-info{
+        margin-bottom: 0.5rem;
+    }
+
+    .slider_button{
+        top: 5rem;
+    }
 }
 
 .promo{
@@ -668,24 +736,53 @@ header {
     width: 100%;
     text-align: center;
 }
-
-@media screen and (max-width:576px) {
+@media screen and (max-width:992px) {
     .promo{
-        padding: 15px;
+        padding: 60px 0 60px;
     }
 
-    .promo__h2 {
-        font-size: 24px;
+    .promo__h2{
+        font-size: 30px;
     }
 
     .promo__p{
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .promo{
+        padding: 30px 0 30px;
+    }
+
+    .promo__h2 {
+        font-size: 15px;
+        font-weight: 400;
         margin-bottom: 1rem;
+    }
+
+    .promo__p{
+        font-size: 14px;
+        margin-bottom: 1rem;
+        font-weight: 300;
     }
 }
 
 .trial-button--padding{
     padding-left: 3rem;
     padding-right: 3rem;
+}
+
+@media screen and (max-width: 576px) {
+    .trial-button{
+        font-size: 10px;
+        height: 30px;
+    }
+
+    .trial-button--padding{
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+    }
 }
 
 .gallery {
@@ -729,7 +826,25 @@ header {
 
 @media screen and (max-width: 576px) {
     .gallery{
-        padding-bottom: 60px;
+        padding-bottom: 30px;
+    }
+
+    .gallery__list{
+        justify-content: center;
+    }
+
+    .gallery__li{
+        width: 100%;
+    }
+
+    .gallery__li--double{
+        max-width: 396px;
+        width: 100%;
+    }
+
+    .gallery__card{
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -783,10 +898,34 @@ header {
     border: none;
 }
 
+@media screen and (max-width:992px) {
+    .team-preview{
+        padding: 30px 0 30px;
+    }
+
+    .team-preview__p{
+        margin-bottom: 30px;
+    }
+}
+
 @media screen and (max-width: 576px) {
     .team-preview{
         padding-top: 25px;
         padding-bottom: 25px;
+    }
+
+    .team-preview__h2{
+        font-size: 20px;
+    }
+
+    .team-preview__p{
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .team-preview__button-text{
+        font-size: 12px;
+        margin-bottom: 10px;
     }
 }
 
@@ -839,21 +978,40 @@ header {
     color: grey;
 }
 
-@media screen and (max-width: 992px) {
-    .team__list{
-        margin: 0;
-        margin-bottom: -15px;
-    }
+@media screen and (max-width:1200px) {
     .team__card{
-        padding: 0;
-        padding-bottom: 15px;
+        width: 33%;
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    .team{
+        padding: 30px 0 30px;
+    }
+    .team__name{
+        font-size: 12px;
+    }
+
+    .team__job{
+        font-size: 10px;
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .team{
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding: 15px 0 15px;
+    }
+
+    .team__list{
+        margin: -5px;
+    }
+
+    .team__card{
+        padding: 5px;
+        width: 33%;
+        align-items: center;
+        justify-content: center;
     }
 
     .team__photo{
@@ -862,15 +1020,16 @@ header {
     }
 
     .team__text-box{
+        width: 100%;
         padding-top: 0;
+        align-items: center;
+        justify-content: center;
     }
+}
 
-    .team__name{
-        font-size: 14px;
-    }
-
-    .team__job{
-        font-size: 12px;
+@media screen and (max-width: 576px) {
+    .team__card{
+        width: 50%;
     }
 }
 
@@ -879,7 +1038,7 @@ header {
     z-index: 1;
     background-color: #F8F7FC;
     padding-top: 14rem;
-    padding-left: 32rem;
+    padding-left: 30%;
     padding-bottom: 13.5rem;
 }
 
@@ -904,7 +1063,7 @@ header {
 
 .challenge__img {
     position: absolute;
-    right: 30.5rem;
+    right: 25%;
     bottom: 0;
     -moz-user-select: none;
     -khtml-user-select: none;
@@ -912,29 +1071,28 @@ header {
     user-select: none;
 }
 
-@media screen and (max-width:1400px) {
+@media screen and (max-width: 1600px) {
     .challenge{
-        padding-left: 21rem;
-        padding-top: 12rem;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        padding-left: 25%;
     }
-
     .challenge__img{
-        right: 15rem;
+        right: 15%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .challenge{
+        padding-left: 15%;
+    }
+    
+    .challenge__img{
+        right: 10%;
     }
 }
 
 @media screen and (max-width: 992px) {
-    .challenge{
-        padding-left: 11rem;
-        padding-top: 10rem;
-    }
-
-    .challenge__img{
-        right: 5rem;
-    }
-}
-
-@media screen and (max-width: 576px) {
     .challenge{
         display: none;
     }
@@ -950,7 +1108,7 @@ header {
 }
 
 .logotypes__container{
-    width: 1200px;
+    max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -972,19 +1130,51 @@ header {
     overflow: hidden;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1400px) {
     .logotypes__list{
-        margin: -20px;
+        margin: -70px;
+    }
+
+    .logotypes__li{
+        padding: 70px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .logotypes__list{
+        margin: -55px;
     }
     .logotypes__li{
-        padding: 20px;
+        padding: 55px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .logotypes{
+        padding: 30px 0 30px;
+    }
+
+    .logotypes__list{
+        margin: -35px;
+    }
+    .logotypes__li{
+        padding: 35px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logotypes__list{
+        margin: -15px;
+    }
+    .logotypes__li{
+        padding: 15px;
     }
 }
 
 @media screen and (max-width: 576px) {
     .logotypes{
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 10px 0 10px;
     }
 }
 
@@ -1073,7 +1263,50 @@ header {
     font-size: 12px;
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 1200px) {
+
+    .footer__border{
+        padding-right: 10px;
+    }
+
+    .footer__subscription-main{
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer__subscribe-box{
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer__subscription{
+        padding: 5px 0 5px;
+    }
+
+    .footer__border{
+        margin-right: 5px;
+
+    }
+
+    .footer__logo{
+        height: 40px;
+    }
+
+    .footer__subscription-main{
+        display: block;
+        padding-left: 0;
+        margin-right: auto;
+    }
+
+    .footer__subscribe-box{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 992px){
     .subscription-form{
         padding-right: 80px;
     }
@@ -1082,6 +1315,20 @@ header {
     }
     .subscription-form__button{
         left: 8.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .subscription-form{
+        padding-right: 32px;
+    }
+    .subscription-form__input{
+        height: 2rem;
+    }
+
+    .subscription-form__button{
+        height: 2rem;
+        width: 6rem;
     }
 }
 
@@ -1192,18 +1439,16 @@ header {
     color: #85AF4B;
 }
 
-@media screen and (max-width:992px) {
-    .footer__border{
-        padding-right: 10px;
+@media screen and (max-width:1200px) {
+    .footer__info{
+        padding: 30px 0 30px;
     }
 
-    .footer__subscription-main{
-        padding-left: 10px;
+    .footer__h2{
+        margin-top: 0;
     }
 
-    .footer__subscribe-box{
-        margin-right: 150px;
-    }
+
 
     .footer__contacts{
         margin-right: 25px;
@@ -1216,27 +1461,71 @@ header {
     .footer__open-hours{
         margin-right: 25px;
     }
+
+    .footer__made-by{
+        padding: 10px 0 10px;
+    }
+
+    .footer__h2:last-child{
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .footer__contacts{
+        width: 50%;
+        margin: 0 0 10px;
+    }
+
+    .footer__nav{
+        width: 50%;
+        margin: 0 0 10px;
+    }
+
+    .footer__open-hours{
+        width: 50%;
+        margin: 0 0 10px;
+    }
+
+    .footer__location{
+        width: 50%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .footer__contacts{
+        width: 100%;
+        margin: 0 0 10px;
+    }
+
+    .footer__nav{
+        width: 100%;
+        margin: 0 0 10px;
+    }
+
+    .footer__open-hours{
+        width: 100%;
+        margin: 0 0 10px;
+    }
+
+    .footer__location{
+        width: 100%;
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 576px) {
-    .footer__subscription{
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .footer__border{
-        padding: 0px;
-        padding-bottom: 10px;
-        border: none;
-    }
-    .footer__subscription-main{
-        padding: 0;
-    }
-    .footer__subscribe-box{
-        margin-right: 10px;
+    .footer__info{
+        padding: 10px 0 10px;
     }
 
-    .footer__info{
-        padding-top: 20px;
+    .footer__contacts-box{
+        margin-bottom: 10px;
+    }
+
+    .footer__h2{
+        margin-bottom: 5px;
     }
 
 }
@@ -1253,6 +1542,13 @@ header {
 .menu__a--footer:hover{
     color: white;
     text-shadow:0 0 10px white;
+}
+
+@media screen and (max-width: 1400px) {
+    .menu_ul--footer{
+        margin-right: 0;
+        height: 100%;
+    }
 }
 
 
