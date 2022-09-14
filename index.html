@@ -3,6 +3,7 @@
  <head>
   <meta charset="utf-8">
   
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="default.css">  
   <link rel="stylesheet" href="style.css">  
   <link rel="stylesheet" href="fonts.css">
@@ -37,7 +38,6 @@
           <li class="menu__li"><a href="" class="menu__a">START YOUR FREE TRIAL</a></li>
         </ul>
       </div> 
-
     </div>
     <img src="./img/header/headerimg.png" class="page-header__background">
     <div class="page-header__menu">
@@ -132,97 +132,117 @@
     <section class="classes">
       <div class="width-container">
         <h2 class="classes__h2">Our Classes</h2>
-        <div class="slider">
-          <button class="slider_button slider_button--prev highlight-txt" onclick="buttonTest();">&#60;</button>
-          <ul class="slider__list">
-            <li class="slider__li">
-              <div class="slider__card">
-                <div class="slider__img" style="background-image: url(./img/body/classes/img1.png);"></div>
-                <h3 class="slider__h3">Seated and Supine Poses for Beginners</h3>
-                <ul class="slider__card-info">
-                  <li class="slider__info-item">
-                    <div class="slider__info-icon"><img src="./img/body/classes/time.png" alt=""></div>
-                    <div class="slider__info-text">7:00am - 11:00am</div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper__card">
+                <div class="swiper__img" style="background-image: url(./img/body/classes/img1.png);"></div>
+                <h3 class="swiper__h3">Seated and Supine Poses for Beginners</h3>
+                <ul class="swiper__card-info">
+                  <li class="swiper__info-item">
+                    <div class="swiper__info-icon"><img src="./img/body/classes/time.png" alt=""></div>
+                    <div class="swiper__info-text">7:00am - 11:00am</div>
                   </li>
-                  <li class="slider__info-item">
-                    <div class="slider__info-icon"><img src="./img/body/classes/teacher.png" alt=""></div>
-                    <div class="slider__info-text">Simon Park</div>
+                  <li class="swiper__info-item">
+                    <div class="swiper__info-icon"><img src="./img/body/classes/teacher.png" alt=""></div>
+                    <div class="swiper__info-text">Simon Park</div>
                   </li>
-                  <li class="slider__info-item">
-                    <div class="slider__info-icon"><img src="./img/body/classes/lvl.png" alt=""></div>
-                    <div class="slider__info-text">Advanced</div>
-                  </li>
-                </ul>
-                <p class="slider__p">Welcome to part 5 of our begginer series with Simon Park!</p>
-              </div>
-            </li>
-            <li class="slider__li">
-              <div class="slider__card">
-                <div class="slider__img" style="background-image: url(./img/body/classes/img2.png);"></div>
-                <h3 class="slider__h3">Work toward Compass Pose</h3>
-                <ul class="slider__card-info">
-                  <li class="slider__info-item">
-                    <div class="slider__info-icon"><img src="./img/body/classes/time.png" alt=""></div>
-                    <div class="slider__info-text">7:00am - 11:00am</div>
-                  </li>
-                  <li class="slider__info-item">
-                    <div class="slider__info-icon"><img src="./img/body/classes/teacher.png" alt=""></div>
-                    <div class="slider__info-text">Simon Park</div>
-                  </li>
-                  <li class="slider__info-item">
-                    <div class="slider__info-icon"><img src="./img/body/classes/lvl.png" alt=""></div>
-                    <div class="slider__info-text">Advanced</div>
+                  <li class="swiper__info-item">
+                    <div class="swiper__info-icon"><img src="./img/body/classes/lvl.png" alt=""></div>
+                    <div class="swiper__info-text">Advanced</div>
                   </li>
                 </ul>
-                <p class="slider__p">Stretch shoulders, hips, and hamstrings as you work towards Compass Pose (Parivrtta Surya Yantrasana).</p>
+                <p class="swiper__p">Welcome to part 5 of our begginer series with Simon Park!</p>
               </div>
-            </li>
-            <li class="slider__li">
-              <div class="slider__card">
-                <div class="slider__img" style="background-image: url(./img/body/classes/img3.png);"></div>
-                <h3 class="slider__h3">Handstand Variations and Transitions</h3>
-                <ul class="slider__card-info">
-                  <li class="slider__info-item">
-                    <div class="slider__info-icon"><img src="./img/body/classes/time.png" alt=""></div>
-                    <div class="slider__info-text">7:00am - 11:00am</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper__card">
+                <div class="swiper__img" style="background-image: url(./img/body/classes/img2.png);"></div>
+                <h3 class="swiper__h3">Work toward Compass Pose</h3>
+                <ul class="swiper__card-info">
+                  <li class="swiper__info-item">
+                    <div class="swiper__info-icon"><img src="./img/body/classes/time.png" alt=""></div>
+                    <div class="swiper__info-text">7:00am - 11:00am</div>
                   </li>
-                  <li class="slider__info-item">
-                    <div class="slider__info-icon"><img src="./img/body/classes/teacher.png" alt=""></div>
-                    <div class="slider__info-text">Simon Park</div>
+                  <li class="swiper__info-item">
+                    <div class="swiper__info-icon"><img src="./img/body/classes/teacher.png" alt=""></div>
+                    <div class="swiper__info-text">Simon Park</div>
                   </li>
-                  <li class="slider__info-item">
-                    <div class="slider__info-icon"><img src="./img/body/classes/lvl.png" alt=""></div>
-                    <div class="slider__info-text">Advanced</div>
+                  <li class="swiper__info-item">
+                    <div class="swiper__info-icon"><img src="./img/body/classes/lvl.png" alt=""></div>
+                    <div class="swiper__info-text">Advanced</div>
                   </li>
                 </ul>
-                <p class="slider__p">Explore handstand variations and transitions in this advanced class. A brief warm up will prepare you to play with inversions!</p>
+                <p class="swiper__p">Stretch shoulders, hips, and hamstrings as you work towards Compass Pose (Parivrtta Surya Yantrasana).</p>
               </div>
-            </li>
-            <li class="slider__li">
-              <div class="slider__card">
-                <div class="slider__img" style="background-image: url(./img/body/classes/img4.png);"></div>
-                <h3 class="slider__h3">Advanced Backbending</h3>
-                <ul class="slider__card-info">
-                  <li class="slider__info-item">
-                    <div class="slider__info-icon"><img src="./img/body/classes/time.png" alt=""></div>
-                    <div class="slider__info-text">7:00am - 11:00am</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper__card">
+                <div class="swiper__img" style="background-image: url(./img/body/classes/img3.png);"></div>
+                <h3 class="swiper__h3">Handstand Variations and Transitions</h3>
+                <ul class="swiper__card-info">
+                  <li class="swiper__info-item">
+                    <div class="swiper__info-icon"><img src="./img/body/classes/time.png" alt=""></div>
+                    <div class="swiper__info-text">7:00am - 11:00am</div>
                   </li>
-                  <li class="slider__info-item">
-                    <div class="slider__info-icon"><img src="./img/body/classes/teacher.png" alt=""></div>
-                    <div class="slider__info-text">Simon Park</div>
+                  <li class="swiper__info-item">
+                    <div class="swiper__info-icon"><img src="./img/body/classes/teacher.png" alt=""></div>
+                    <div class="swiper__info-text">Simon Park</div>
                   </li>
-                  <li class="slider__info-item">
-                    <div class="slider__info-icon"><img src="./img/body/classes/lvl.png" alt=""></div>
-                    <div class="slider__info-text">Advanced</div>
+                  <li class="swiper__info-item">
+                    <div class="swiper__info-icon"><img src="./img/body/classes/lvl.png" alt=""></div>
+                    <div class="swiper__info-text">Advanced</div>
                   </li>
                 </ul>
-                <p class="slider__p">Amanda Botur has created a class to help you prepare for the hormonal shifts and rising emotions that may occur in the days...</p>
+                <p class="swiper__p">Explore handstand variations and transitions in this advanced class. A brief warm up will prepare you to play with inversions!</p>
               </div>
-            </li>
-          </ul>
-          <button class="slider_button slider_button--next   highlight-txt inactive" onclick="buttonTest();">&gt;</button> 
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper__card">
+                <div class="swiper__img" style="background-image: url(./img/body/classes/img4.png);"></div>
+                <h3 class="swiper__h3">Advanced Backbending</h3>
+                <ul class="swiper__card-info">
+                  <li class="swiper__info-item">
+                    <div class="swiper__info-icon"><img src="./img/body/classes/time.png" alt=""></div>
+                    <div class="swiper__info-text">7:00am - 11:00am</div>
+                  </li>
+                  <li class="swiper__info-item">
+                    <div class="swiper__info-icon"><img src="./img/body/classes/teacher.png" alt=""></div>
+                    <div class="swiper__info-text">Simon Park</div>
+                  </li>
+                  <li class="swiper__info-item">
+                    <div class="swiper__info-icon"><img src="./img/body/classes/lvl.png" alt=""></div>
+                    <div class="swiper__info-text">Advanced</div>
+                  </li>
+                </ul>
+                <p class="swiper__p">Amanda Botur has created a class to help you prepare for the hormonal shifts and rising emotions that may occur in the days...</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper__card">
+                <div class="swiper__img" style="background-image: url(./img/body/classes/img4.png);"></div>
+                <h3 class="swiper__h3">Advanced Backbending</h3>
+                <ul class="swiper__card-info">
+                  <li class="swiper__info-item">
+                    <div class="swiper__info-icon"><img src="./img/body/classes/time.png" alt=""></div>
+                    <div class="swiper__info-text">7:00am - 11:00am</div>
+                  </li>
+                  <li class="swiper__info-item">
+                    <div class="swiper__info-icon"><img src="./img/body/classes/teacher.png" alt=""></div>
+                    <div class="swiper__info-text">Simon Park</div>
+                  </li>
+                  <li class="swiper__info-item">
+                    <div class="swiper__info-icon"><img src="./img/body/classes/lvl.png" alt=""></div>
+                    <div class="swiper__info-text">Advanced</div>
+                  </li>
+                </ul>
+                <p class="swiper__p">Amanda Botur has created a class to help you prepare for the hormonal shifts and rising emotions that may occur in the days...</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </section>
     <section class="promo">
       <div class="width-container">
@@ -496,21 +516,23 @@
     </div>
       <div class="footer__made-by">
         <div class="width-container"> 
-        <p class="footer__h2">BUILT WITH &nbsp;<span class="footer__hearth">&#10084;</span>&nbsp; WP THEME BY ALITSTUDIO</p>
-        <div class="menu">
-          <ul class="menu__ul menu_ul--footer">
-            <li class="menu__li"><a href="" class="menu__a menu__a--footer">HOME</a></li>
-            <li class="menu__li"><a href="" class="menu__a menu__a--footer">PAGES</a></li>
-            <li class="menu__li"><a href="" class="menu__a menu__a--footer">SHORTCODES</a></li>
-            <li class="menu__li"><a href="" class="menu__a menu__a--footer">FEATURES</a></li>
-            <li class="menu__li"><a href="" class="menu__a menu__a--footer">BLOG</a></li>
-            <li class="menu__li"><a href="" class="menu__a menu__a--footer">PORTFOLIO</a></li>
-            <li class="menu__li"><a href="" class="menu__a menu__a--footer">SHOP</a></li>
+        <p class="footer__h2 footer__h2--made-by">BUILT WITH &nbsp;<span class="footer__hearth">&#10084;</span>&nbsp; WP THEME BY ALITSTUDIO</p>
+        <div class="footer__menu">
+          <ul class="footer__menu-ul">
+            <li class="footer__menu-li"><a href="" class="footer__menu-a">HOME</a></li>
+            <li class="footer__menu-li"><a href="" class="footer__menu-a">PAGES</a></li>
+            <li class="footer__menu-li"><a href="" class="footer__menu-a">SHORTCODES</a></li>
+            <li class="footer__menu-li"><a href="" class="footer__menu-a">FEATURES</a></li>
+            <li class="footer__menu-li"><a href="" class="footer__menu-a">BLOG</a></li>
+            <li class="footer__menu-li"><a href="" class="footer__menu-a">PORTFOLIO</a></li>
+            <li class="footer__menu-li"><a href="" class="footer__menu-a">SHOP</a></li>
           </ul>
         </div>
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
     <script src="script.js"></script> 
  </body>
 </html>
