@@ -26,8 +26,6 @@ window.addEventListener('scroll', () => {
         buttonOpen.style.position='fixed';
         mobileHeader.style.backgroundColor = 'rgba(' + 226 + ',' + 230 + ',' + 238 + ',' + 1 +')';
     }
-    /* Зафиксировали баннер после того */
-    /* как пользователь отскролил вниз */
     
     else if (scrolled < 300 && (resolution <= 768 && resolution > 576))
     {
@@ -35,6 +33,4 @@ window.addEventListener('scroll', () => {
         buttonOpen.style.position='static';
         mobileHeader.style.backgroundColor = 'rgba(' + 226 + ',' + 230 + ',' + 238 + ',' + 0 +')';
     }
-    /* Вернули обратно, никаких хитростей */
-    /* в современных браузерах придумывать не нужно */
 });
