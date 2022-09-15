@@ -5,32 +5,58 @@ let menu = document.querySelector('.menu')
 let mobileMenu = document.querySelector('.page-header__mobile-menu')
 let mobileHeader = document.querySelector('.page-header__menu');
 
-buttonOpen.onclick = function(){
-    menu.classList.toggle('active');
-    mobileMenu.classList.toggle('active')
+const mobileMenuFunc = () => {
+    buttonOpen.onclick = function(){
+        menu.classList.toggle('active');
+        mobileMenu.classList.toggle('active')
+    };
+
+    buttonClose.onclick = function(){
+        menu.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+    };
 };
 
-buttonClose.onclick = function(){
-    menu.classList.toggle('active');
-    mobileMenu.classList.toggle('active')
-};
-
-
-window.addEventListener('scroll', () => {
+const menuScroll = window.addEventListener('scroll', () => {
     const scrolled = window.scrollY;
-    const resolution = screen.width;
-
-    if (scrolled >= 300 && (resolution <= 768 && resolution > 576))
-    {
-        mobileHeader.style.position='fixed';
-        buttonOpen.style.position='fixed';
-        mobileHeader.style.backgroundColor = 'rgba(' + 226 + ',' + 230 + ',' + 238 + ',' + 1 +')';
-    }
+    const resolutionWidth = screen.width;
     
-    else if (scrolled < 300 && (resolution <= 768 && resolution > 576))
-    {
-        mobileHeader.style.position='static';
-        buttonOpen.style.position='static';
-        mobileHeader.style.backgroundColor = 'rgba(' + 226 + ',' + 230 + ',' + 238 + ',' + 0 +')';
-    }
+    const isBreakpoint = resolutionWidth <= 768 && resolutionWidth > 576;
+    const isScrolledY = scrolled >= 300;
+
+    if (isScrolledY && isBreakpoint)
+    {   
+        mobileHeader.classList.add('page-header__menu--fixed');
+    };
+    
+    if (!isScrolledY || !isBreakpoint)
+    {   
+        mobileHeader.classList.remove('page-header__menu--fixed');
+    };
 });
+
+const swiper = new Swiper('.swiper', {
+    navigation: {
+      nextEl: '.swiper-button-next', 
+      prevEl: '.swiper-button-prev', 
+    },
+
+    slidesPerView: 1,
+
+    breakpoints: {
+        768: {
+            slidesPerView: 4,
+        },
+        576: {
+            slidesPerView: 3,
+        },
+    }
+  });
+
+const onPageReady = () => {
+    mobileMenuFunc()
+    menuScroll()
+    swiper()
+};
+
+onPageReady();

@@ -143,13 +143,13 @@ header {
 @media screen and (max-width: 768px) {
     
     .page-header__menu{
-        position: fixed;
+        position: static;
         z-index: 100;
-        width: 100%;
         margin: -10px;
         overflow: hidden;
         padding: 10px;
         padding-left: 20px;
+        padding-right: 20px;
     }
 
     .page-header__logo{
@@ -158,10 +158,6 @@ header {
 
     .page-header__mobile-button{
         display: block;
-        position: fixed;
-        z-index: 40;
-        right: 30px;
-        top: 10px;
     }
 
     .page-header__mobile-button:hover{
@@ -210,12 +206,19 @@ header {
     .page-header__mobile-button-close:hover{
         filter: drop-shadow(0 0 10px #fff);
     }
+
+    .page-header__menu--fixed{
+        position: fixed;
+        width: 100%;
+        background-color: rgba(226, 230, 238, 1);
+    }
 }
 
 @media screen and (max-width: 576px) {
 
     .page-header__menu{
-        padding-left: 15px;
+        position: fixed;
+        width: 100%;
         background-color: rgba(226, 230, 238);
     }
 
@@ -225,14 +228,6 @@ header {
 
     .page-header__background{
         display: none;
-    }
-
-    .page-header__mobile-button{
-        display: block;
-        position: fixed;
-        z-index: 40;
-        right: 15px;
-        top: 10px;
     }
 
     .page-header__mobile-button:hover{
@@ -273,10 +268,6 @@ header {
         position: absolute;
         right: 5px;
         top: 5px;
-    }
-
-    .page-header__mobile-button-close:hover{
-        filter: drop-shadow(0 0 10px #fff);
     }
 }
 
