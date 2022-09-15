@@ -6,12 +6,12 @@ let mobileMenu = document.querySelector('.page-header__mobile-menu')
 let mobileHeader = document.querySelector('.page-header__menu');
 
 const mobileMenuFunc = () => {
-    buttonOpen.onclick = function(){
+    buttonOpen.onclick = () => {
         menu.classList.toggle('active');
         mobileMenu.classList.toggle('active')
     };
 
-    buttonClose.onclick = function(){
+    buttonClose.onclick = () => {
         menu.classList.toggle('active');
         mobileMenu.classList.toggle('active');
     };
