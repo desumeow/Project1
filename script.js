@@ -59,4 +59,34 @@ const onPageReady = () => {
     swiper()
 };
 
+class ShopCart {
+    constructor() {
+        this.reset();
+
+        this.products = [
+            {
+                id: '2',
+                price: '',
+                quantity: ''
+            },
+            {
+                id: '3',
+                price: '',
+                quantity: ''
+            },
+        ];
+
+        const activeProduct = this.products.find(item => item.id === id);
+     }
+
+    reset() {
+      objectFor(
+        this,
+        (key, value) => {
+          delete this[key]
+        }
+      );
+    }
+}
+
 onPageReady();
